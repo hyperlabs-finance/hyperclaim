@@ -1,0 +1,2619 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "OnlyIdentity",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "holderAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint16",
+          "name": "country",
+          "type": "uint16"
+        }
+      ],
+      "name": "CountryUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "holderAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "identity",
+          "type": "uint256"
+        }
+      ],
+      "name": "IdentityRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "holderAddress",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "identity",
+          "type": "uint256"
+        }
+      ],
+      "name": "IdentityRemoved",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "identity",
+          "type": "uint256"
+        }
+      ],
+      "name": "deleteIdentity",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "deleteIdentityByAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "identity",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCountry",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getCountryByAddress",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "identity",
+          "type": "uint256"
+        }
+      ],
+      "name": "getIdentity",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getIdentityByAddress",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint16",
+          "name": "country",
+          "type": "uint16"
+        }
+      ],
+      "name": "newIdentity",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "identityId_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "identity",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint16",
+          "name": "country",
+          "type": "uint16"
+        }
+      ],
+      "name": "setCountry",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "deleteIdentity(uint256)": "ffb94cb3",
+    "deleteIdentityByAddress(address)": "4d083a9e",
+    "getCountry(uint256)": "afa5e0a9",
+    "getCountryByAddress(address)": "d182704a",
+    "getIdentity(uint256)": "85e3f058",
+    "getIdentityByAddress(address)": "f2f5cd1d",
+    "newIdentity(address,uint16)": "ce45c55d",
+    "setCountry(uint256,uint16)": "011493af"
+  },
+  "ast": {
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseIdentityRegistry.sol",
+    "id": 1453,
+    "exportedSymbols": {
+      "IHyperbaseIdentityRegistry": [
+        1452
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "37:4299:6",
+    "nodes": [
+      {
+        "id": 1172,
+        "nodeType": "PragmaDirective",
+        "src": "37:23:6",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".6"
+        ]
+      },
+      {
+        "id": 1452,
+        "nodeType": "ContractDefinition",
+        "src": "62:4274:6",
+        "nodes": [
+          {
+            "id": 1175,
+            "nodeType": "ErrorDefinition",
+            "src": "228:21:6",
+            "documentation": {
+              "id": 1173,
+              "nodeType": "StructuredDocumentation",
+              "src": "159:64:6",
+              "text": " @dev Only the identity owner can call this function"
+            },
+            "errorSelector": "1bba566f",
+            "name": "OnlyIdentity",
+            "nameLocation": "234:12:6",
+            "parameters": {
+              "id": 1174,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "246:2:6"
+            }
+          },
+          {
+            "id": 1182,
+            "nodeType": "EventDefinition",
+            "src": "377:82:6",
+            "anonymous": false,
+            "documentation": {
+              "id": 1176,
+              "nodeType": "StructuredDocumentation",
+              "src": "309:63:6",
+              "text": " @dev A new identity has been added to the registry"
+            },
+            "eventSelector": "22bfb6218489c201b6ec174e5dd0380b7877b3a2d12eed0542f6b5e8ef712f28",
+            "name": "IdentityRegistered",
+            "nameLocation": "383:18:6",
+            "parameters": {
+              "id": 1181,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1178,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "holderAddress",
+                  "nameLocation": "418:13:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1182,
+                  "src": "402:29:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1177,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "402:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1180,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "identity",
+                  "nameLocation": "449:8:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1182,
+                  "src": "433:24:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1179,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "433:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "401:57:6"
+            }
+          },
+          {
+            "id": 1189,
+            "nodeType": "EventDefinition",
+            "src": "533:79:6",
+            "anonymous": false,
+            "documentation": {
+              "id": 1183,
+              "nodeType": "StructuredDocumentation",
+              "src": "463:65:6",
+              "text": " @dev An indentity has been removed from the registry"
+            },
+            "eventSelector": "f06dfe9062e9317cd357560ea667d65a9b032f1a674c04e99653e894e145c8fa",
+            "name": "IdentityRemoved",
+            "nameLocation": "539:15:6",
+            "parameters": {
+              "id": 1188,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1185,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "holderAddress",
+                  "nameLocation": "571:13:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1189,
+                  "src": "555:29:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1184,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "555:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1187,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "identity",
+                  "nameLocation": "602:8:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1189,
+                  "src": "586:24:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1186,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "586:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "554:57:6"
+            }
+          },
+          {
+            "id": 1196,
+            "nodeType": "EventDefinition",
+            "src": "677:76:6",
+            "anonymous": false,
+            "documentation": {
+              "id": 1190,
+              "nodeType": "StructuredDocumentation",
+              "src": "616:56:6",
+              "text": " @dev An identities country has been updated"
+            },
+            "eventSelector": "04ed3b726495c2dca1ff1215d9ca54e1a4030abb5e82b0f6ce55702416cee853",
+            "name": "CountryUpdated",
+            "nameLocation": "683:14:6",
+            "parameters": {
+              "id": 1195,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1192,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "holderAddress",
+                  "nameLocation": "714:13:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1196,
+                  "src": "698:29:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1191,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "698:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1194,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "country",
+                  "nameLocation": "744:7:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1196,
+                  "src": "729:22:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1193,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "729:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "697:55:6"
+            }
+          },
+          {
+            "id": 1393,
+            "nodeType": "EnumDefinition",
+            "src": "863:2435:6",
+            "canonicalName": "IHyperbaseIdentityRegistry.Country",
+            "members": [
+              {
+                "id": 1197,
+                "name": "Afghanistan",
+                "nameLocation": "880:11:6",
+                "nodeType": "EnumValue",
+                "src": "880:11:6"
+              },
+              {
+                "id": 1198,
+                "name": "Albania",
+                "nameLocation": "895:7:6",
+                "nodeType": "EnumValue",
+                "src": "895:7:6"
+              },
+              {
+                "id": 1199,
+                "name": "Algeria",
+                "nameLocation": "906:7:6",
+                "nodeType": "EnumValue",
+                "src": "906:7:6"
+              },
+              {
+                "id": 1200,
+                "name": "Andorra",
+                "nameLocation": "917:7:6",
+                "nodeType": "EnumValue",
+                "src": "917:7:6"
+              },
+              {
+                "id": 1201,
+                "name": "Angola",
+                "nameLocation": "928:6:6",
+                "nodeType": "EnumValue",
+                "src": "928:6:6"
+              },
+              {
+                "id": 1202,
+                "name": "Antigua_and_Deps",
+                "nameLocation": "938:16:6",
+                "nodeType": "EnumValue",
+                "src": "938:16:6"
+              },
+              {
+                "id": 1203,
+                "name": "Argentina",
+                "nameLocation": "958:9:6",
+                "nodeType": "EnumValue",
+                "src": "958:9:6"
+              },
+              {
+                "id": 1204,
+                "name": "Armenia",
+                "nameLocation": "971:7:6",
+                "nodeType": "EnumValue",
+                "src": "971:7:6"
+              },
+              {
+                "id": 1205,
+                "name": "Australia",
+                "nameLocation": "982:9:6",
+                "nodeType": "EnumValue",
+                "src": "982:9:6"
+              },
+              {
+                "id": 1206,
+                "name": "Austria",
+                "nameLocation": "995:7:6",
+                "nodeType": "EnumValue",
+                "src": "995:7:6"
+              },
+              {
+                "id": 1207,
+                "name": "Azerbaijan",
+                "nameLocation": "1006:10:6",
+                "nodeType": "EnumValue",
+                "src": "1006:10:6"
+              },
+              {
+                "id": 1208,
+                "name": "Bahamas",
+                "nameLocation": "1020:7:6",
+                "nodeType": "EnumValue",
+                "src": "1020:7:6"
+              },
+              {
+                "id": 1209,
+                "name": "Bahrain",
+                "nameLocation": "1031:7:6",
+                "nodeType": "EnumValue",
+                "src": "1031:7:6"
+              },
+              {
+                "id": 1210,
+                "name": "Bangladesh",
+                "nameLocation": "1042:10:6",
+                "nodeType": "EnumValue",
+                "src": "1042:10:6"
+              },
+              {
+                "id": 1211,
+                "name": "Barbados",
+                "nameLocation": "1056:8:6",
+                "nodeType": "EnumValue",
+                "src": "1056:8:6"
+              },
+              {
+                "id": 1212,
+                "name": "Belarus",
+                "nameLocation": "1068:7:6",
+                "nodeType": "EnumValue",
+                "src": "1068:7:6"
+              },
+              {
+                "id": 1213,
+                "name": "Belgium",
+                "nameLocation": "1079:7:6",
+                "nodeType": "EnumValue",
+                "src": "1079:7:6"
+              },
+              {
+                "id": 1214,
+                "name": "Belize",
+                "nameLocation": "1090:6:6",
+                "nodeType": "EnumValue",
+                "src": "1090:6:6"
+              },
+              {
+                "id": 1215,
+                "name": "Benin",
+                "nameLocation": "1100:5:6",
+                "nodeType": "EnumValue",
+                "src": "1100:5:6"
+              },
+              {
+                "id": 1216,
+                "name": "Bhutan",
+                "nameLocation": "1109:6:6",
+                "nodeType": "EnumValue",
+                "src": "1109:6:6"
+              },
+              {
+                "id": 1217,
+                "name": "Bolivia",
+                "nameLocation": "1119:7:6",
+                "nodeType": "EnumValue",
+                "src": "1119:7:6"
+              },
+              {
+                "id": 1218,
+                "name": "Bosnia_Herzegovina",
+                "nameLocation": "1130:18:6",
+                "nodeType": "EnumValue",
+                "src": "1130:18:6"
+              },
+              {
+                "id": 1219,
+                "name": "Botswana",
+                "nameLocation": "1152:8:6",
+                "nodeType": "EnumValue",
+                "src": "1152:8:6"
+              },
+              {
+                "id": 1220,
+                "name": "Brazil",
+                "nameLocation": "1164:6:6",
+                "nodeType": "EnumValue",
+                "src": "1164:6:6"
+              },
+              {
+                "id": 1221,
+                "name": "Brunei",
+                "nameLocation": "1174:6:6",
+                "nodeType": "EnumValue",
+                "src": "1174:6:6"
+              },
+              {
+                "id": 1222,
+                "name": "Bulgaria",
+                "nameLocation": "1184:8:6",
+                "nodeType": "EnumValue",
+                "src": "1184:8:6"
+              },
+              {
+                "id": 1223,
+                "name": "Burkina",
+                "nameLocation": "1196:7:6",
+                "nodeType": "EnumValue",
+                "src": "1196:7:6"
+              },
+              {
+                "id": 1224,
+                "name": "Burundi",
+                "nameLocation": "1207:7:6",
+                "nodeType": "EnumValue",
+                "src": "1207:7:6"
+              },
+              {
+                "id": 1225,
+                "name": "Cambodia",
+                "nameLocation": "1218:8:6",
+                "nodeType": "EnumValue",
+                "src": "1218:8:6"
+              },
+              {
+                "id": 1226,
+                "name": "Cameroon",
+                "nameLocation": "1230:8:6",
+                "nodeType": "EnumValue",
+                "src": "1230:8:6"
+              },
+              {
+                "id": 1227,
+                "name": "Canada",
+                "nameLocation": "1242:6:6",
+                "nodeType": "EnumValue",
+                "src": "1242:6:6"
+              },
+              {
+                "id": 1228,
+                "name": "Cape_Verde",
+                "nameLocation": "1252:10:6",
+                "nodeType": "EnumValue",
+                "src": "1252:10:6"
+              },
+              {
+                "id": 1229,
+                "name": "Central_African_Rep",
+                "nameLocation": "1266:19:6",
+                "nodeType": "EnumValue",
+                "src": "1266:19:6"
+              },
+              {
+                "id": 1230,
+                "name": "Chad",
+                "nameLocation": "1289:4:6",
+                "nodeType": "EnumValue",
+                "src": "1289:4:6"
+              },
+              {
+                "id": 1231,
+                "name": "Chile",
+                "nameLocation": "1297:5:6",
+                "nodeType": "EnumValue",
+                "src": "1297:5:6"
+              },
+              {
+                "id": 1232,
+                "name": "China",
+                "nameLocation": "1306:5:6",
+                "nodeType": "EnumValue",
+                "src": "1306:5:6"
+              },
+              {
+                "id": 1233,
+                "name": "Colombia",
+                "nameLocation": "1315:8:6",
+                "nodeType": "EnumValue",
+                "src": "1315:8:6"
+              },
+              {
+                "id": 1234,
+                "name": "Comoros",
+                "nameLocation": "1327:7:6",
+                "nodeType": "EnumValue",
+                "src": "1327:7:6"
+              },
+              {
+                "id": 1235,
+                "name": "Congo",
+                "nameLocation": "1338:5:6",
+                "nodeType": "EnumValue",
+                "src": "1338:5:6"
+              },
+              {
+                "id": 1236,
+                "name": "Congo_Democratic_Rep",
+                "nameLocation": "1347:20:6",
+                "nodeType": "EnumValue",
+                "src": "1347:20:6"
+              },
+              {
+                "id": 1237,
+                "name": "Costa_Rica",
+                "nameLocation": "1371:10:6",
+                "nodeType": "EnumValue",
+                "src": "1371:10:6"
+              },
+              {
+                "id": 1238,
+                "name": "Croatia",
+                "nameLocation": "1385:7:6",
+                "nodeType": "EnumValue",
+                "src": "1385:7:6"
+              },
+              {
+                "id": 1239,
+                "name": "Cuba",
+                "nameLocation": "1396:4:6",
+                "nodeType": "EnumValue",
+                "src": "1396:4:6"
+              },
+              {
+                "id": 1240,
+                "name": "Cyprus",
+                "nameLocation": "1404:6:6",
+                "nodeType": "EnumValue",
+                "src": "1404:6:6"
+              },
+              {
+                "id": 1241,
+                "name": "Czech_Republic",
+                "nameLocation": "1414:14:6",
+                "nodeType": "EnumValue",
+                "src": "1414:14:6"
+              },
+              {
+                "id": 1242,
+                "name": "Denmark",
+                "nameLocation": "1432:7:6",
+                "nodeType": "EnumValue",
+                "src": "1432:7:6"
+              },
+              {
+                "id": 1243,
+                "name": "Djibouti",
+                "nameLocation": "1443:8:6",
+                "nodeType": "EnumValue",
+                "src": "1443:8:6"
+              },
+              {
+                "id": 1244,
+                "name": "Dominica",
+                "nameLocation": "1455:8:6",
+                "nodeType": "EnumValue",
+                "src": "1455:8:6"
+              },
+              {
+                "id": 1245,
+                "name": "Dominican_Republic",
+                "nameLocation": "1467:18:6",
+                "nodeType": "EnumValue",
+                "src": "1467:18:6"
+              },
+              {
+                "id": 1246,
+                "name": "East_Timor",
+                "nameLocation": "1489:10:6",
+                "nodeType": "EnumValue",
+                "src": "1489:10:6"
+              },
+              {
+                "id": 1247,
+                "name": "Ecuador",
+                "nameLocation": "1503:7:6",
+                "nodeType": "EnumValue",
+                "src": "1503:7:6"
+              },
+              {
+                "id": 1248,
+                "name": "Egypt",
+                "nameLocation": "1514:5:6",
+                "nodeType": "EnumValue",
+                "src": "1514:5:6"
+              },
+              {
+                "id": 1249,
+                "name": "El_Salvador",
+                "nameLocation": "1523:11:6",
+                "nodeType": "EnumValue",
+                "src": "1523:11:6"
+              },
+              {
+                "id": 1250,
+                "name": "Equatorial_Guinea",
+                "nameLocation": "1538:17:6",
+                "nodeType": "EnumValue",
+                "src": "1538:17:6"
+              },
+              {
+                "id": 1251,
+                "name": "Eritrea",
+                "nameLocation": "1559:7:6",
+                "nodeType": "EnumValue",
+                "src": "1559:7:6"
+              },
+              {
+                "id": 1252,
+                "name": "Estonia",
+                "nameLocation": "1570:7:6",
+                "nodeType": "EnumValue",
+                "src": "1570:7:6"
+              },
+              {
+                "id": 1253,
+                "name": "Ethiopia",
+                "nameLocation": "1581:8:6",
+                "nodeType": "EnumValue",
+                "src": "1581:8:6"
+              },
+              {
+                "id": 1254,
+                "name": "Fiji",
+                "nameLocation": "1593:4:6",
+                "nodeType": "EnumValue",
+                "src": "1593:4:6"
+              },
+              {
+                "id": 1255,
+                "name": "Finland",
+                "nameLocation": "1601:7:6",
+                "nodeType": "EnumValue",
+                "src": "1601:7:6"
+              },
+              {
+                "id": 1256,
+                "name": "France",
+                "nameLocation": "1612:6:6",
+                "nodeType": "EnumValue",
+                "src": "1612:6:6"
+              },
+              {
+                "id": 1257,
+                "name": "Gabon",
+                "nameLocation": "1622:5:6",
+                "nodeType": "EnumValue",
+                "src": "1622:5:6"
+              },
+              {
+                "id": 1258,
+                "name": "Gambia",
+                "nameLocation": "1631:6:6",
+                "nodeType": "EnumValue",
+                "src": "1631:6:6"
+              },
+              {
+                "id": 1259,
+                "name": "Georgia",
+                "nameLocation": "1641:7:6",
+                "nodeType": "EnumValue",
+                "src": "1641:7:6"
+              },
+              {
+                "id": 1260,
+                "name": "Germany",
+                "nameLocation": "1652:7:6",
+                "nodeType": "EnumValue",
+                "src": "1652:7:6"
+              },
+              {
+                "id": 1261,
+                "name": "Ghana",
+                "nameLocation": "1663:5:6",
+                "nodeType": "EnumValue",
+                "src": "1663:5:6"
+              },
+              {
+                "id": 1262,
+                "name": "Greece",
+                "nameLocation": "1672:6:6",
+                "nodeType": "EnumValue",
+                "src": "1672:6:6"
+              },
+              {
+                "id": 1263,
+                "name": "Grenada",
+                "nameLocation": "1682:7:6",
+                "nodeType": "EnumValue",
+                "src": "1682:7:6"
+              },
+              {
+                "id": 1264,
+                "name": "Guatemala",
+                "nameLocation": "1693:9:6",
+                "nodeType": "EnumValue",
+                "src": "1693:9:6"
+              },
+              {
+                "id": 1265,
+                "name": "Guinea",
+                "nameLocation": "1706:6:6",
+                "nodeType": "EnumValue",
+                "src": "1706:6:6"
+              },
+              {
+                "id": 1266,
+                "name": "Guinea_Bissau",
+                "nameLocation": "1716:13:6",
+                "nodeType": "EnumValue",
+                "src": "1716:13:6"
+              },
+              {
+                "id": 1267,
+                "name": "Guyana",
+                "nameLocation": "1733:6:6",
+                "nodeType": "EnumValue",
+                "src": "1733:6:6"
+              },
+              {
+                "id": 1268,
+                "name": "Haiti",
+                "nameLocation": "1743:5:6",
+                "nodeType": "EnumValue",
+                "src": "1743:5:6"
+              },
+              {
+                "id": 1269,
+                "name": "Honduras",
+                "nameLocation": "1752:8:6",
+                "nodeType": "EnumValue",
+                "src": "1752:8:6"
+              },
+              {
+                "id": 1270,
+                "name": "Hungary",
+                "nameLocation": "1764:7:6",
+                "nodeType": "EnumValue",
+                "src": "1764:7:6"
+              },
+              {
+                "id": 1271,
+                "name": "Iceland",
+                "nameLocation": "1775:7:6",
+                "nodeType": "EnumValue",
+                "src": "1775:7:6"
+              },
+              {
+                "id": 1272,
+                "name": "India",
+                "nameLocation": "1786:5:6",
+                "nodeType": "EnumValue",
+                "src": "1786:5:6"
+              },
+              {
+                "id": 1273,
+                "name": "Indonesia",
+                "nameLocation": "1795:9:6",
+                "nodeType": "EnumValue",
+                "src": "1795:9:6"
+              },
+              {
+                "id": 1274,
+                "name": "Iran",
+                "nameLocation": "1808:4:6",
+                "nodeType": "EnumValue",
+                "src": "1808:4:6"
+              },
+              {
+                "id": 1275,
+                "name": "Iraq",
+                "nameLocation": "1816:4:6",
+                "nodeType": "EnumValue",
+                "src": "1816:4:6"
+              },
+              {
+                "id": 1276,
+                "name": "Ireland",
+                "nameLocation": "1824:7:6",
+                "nodeType": "EnumValue",
+                "src": "1824:7:6"
+              },
+              {
+                "id": 1277,
+                "name": "Israel",
+                "nameLocation": "1835:6:6",
+                "nodeType": "EnumValue",
+                "src": "1835:6:6"
+              },
+              {
+                "id": 1278,
+                "name": "Italy",
+                "nameLocation": "1845:5:6",
+                "nodeType": "EnumValue",
+                "src": "1845:5:6"
+              },
+              {
+                "id": 1279,
+                "name": "Ivory_Coast",
+                "nameLocation": "1854:11:6",
+                "nodeType": "EnumValue",
+                "src": "1854:11:6"
+              },
+              {
+                "id": 1280,
+                "name": "Jamaica",
+                "nameLocation": "1869:7:6",
+                "nodeType": "EnumValue",
+                "src": "1869:7:6"
+              },
+              {
+                "id": 1281,
+                "name": "Japan",
+                "nameLocation": "1880:5:6",
+                "nodeType": "EnumValue",
+                "src": "1880:5:6"
+              },
+              {
+                "id": 1282,
+                "name": "Jordan",
+                "nameLocation": "1889:6:6",
+                "nodeType": "EnumValue",
+                "src": "1889:6:6"
+              },
+              {
+                "id": 1283,
+                "name": "Kazakhstan",
+                "nameLocation": "1899:10:6",
+                "nodeType": "EnumValue",
+                "src": "1899:10:6"
+              },
+              {
+                "id": 1284,
+                "name": "Kenya",
+                "nameLocation": "1913:5:6",
+                "nodeType": "EnumValue",
+                "src": "1913:5:6"
+              },
+              {
+                "id": 1285,
+                "name": "Kiribati",
+                "nameLocation": "1922:8:6",
+                "nodeType": "EnumValue",
+                "src": "1922:8:6"
+              },
+              {
+                "id": 1286,
+                "name": "Korea_North",
+                "nameLocation": "1934:11:6",
+                "nodeType": "EnumValue",
+                "src": "1934:11:6"
+              },
+              {
+                "id": 1287,
+                "name": "Korea_South",
+                "nameLocation": "1949:11:6",
+                "nodeType": "EnumValue",
+                "src": "1949:11:6"
+              },
+              {
+                "id": 1288,
+                "name": "Kosovo",
+                "nameLocation": "1964:6:6",
+                "nodeType": "EnumValue",
+                "src": "1964:6:6"
+              },
+              {
+                "id": 1289,
+                "name": "Kuwait",
+                "nameLocation": "1974:6:6",
+                "nodeType": "EnumValue",
+                "src": "1974:6:6"
+              },
+              {
+                "id": 1290,
+                "name": "Kyrgyzstan",
+                "nameLocation": "1984:10:6",
+                "nodeType": "EnumValue",
+                "src": "1984:10:6"
+              },
+              {
+                "id": 1291,
+                "name": "Laos",
+                "nameLocation": "1998:4:6",
+                "nodeType": "EnumValue",
+                "src": "1998:4:6"
+              },
+              {
+                "id": 1292,
+                "name": "Latvia",
+                "nameLocation": "2006:6:6",
+                "nodeType": "EnumValue",
+                "src": "2006:6:6"
+              },
+              {
+                "id": 1293,
+                "name": "Lebanon",
+                "nameLocation": "2016:7:6",
+                "nodeType": "EnumValue",
+                "src": "2016:7:6"
+              },
+              {
+                "id": 1294,
+                "name": "Lesotho",
+                "nameLocation": "2027:7:6",
+                "nodeType": "EnumValue",
+                "src": "2027:7:6"
+              },
+              {
+                "id": 1295,
+                "name": "Liberia",
+                "nameLocation": "2038:7:6",
+                "nodeType": "EnumValue",
+                "src": "2038:7:6"
+              },
+              {
+                "id": 1296,
+                "name": "Libya",
+                "nameLocation": "2049:5:6",
+                "nodeType": "EnumValue",
+                "src": "2049:5:6"
+              },
+              {
+                "id": 1297,
+                "name": "Liechtenstein",
+                "nameLocation": "2058:13:6",
+                "nodeType": "EnumValue",
+                "src": "2058:13:6"
+              },
+              {
+                "id": 1298,
+                "name": "Lithuania",
+                "nameLocation": "2075:9:6",
+                "nodeType": "EnumValue",
+                "src": "2075:9:6"
+              },
+              {
+                "id": 1299,
+                "name": "Luxembourg",
+                "nameLocation": "2088:10:6",
+                "nodeType": "EnumValue",
+                "src": "2088:10:6"
+              },
+              {
+                "id": 1300,
+                "name": "Macedonia",
+                "nameLocation": "2102:9:6",
+                "nodeType": "EnumValue",
+                "src": "2102:9:6"
+              },
+              {
+                "id": 1301,
+                "name": "Madagascar",
+                "nameLocation": "2115:10:6",
+                "nodeType": "EnumValue",
+                "src": "2115:10:6"
+              },
+              {
+                "id": 1302,
+                "name": "Malawi",
+                "nameLocation": "2129:6:6",
+                "nodeType": "EnumValue",
+                "src": "2129:6:6"
+              },
+              {
+                "id": 1303,
+                "name": "Malaysia",
+                "nameLocation": "2139:8:6",
+                "nodeType": "EnumValue",
+                "src": "2139:8:6"
+              },
+              {
+                "id": 1304,
+                "name": "Maldives",
+                "nameLocation": "2151:8:6",
+                "nodeType": "EnumValue",
+                "src": "2151:8:6"
+              },
+              {
+                "id": 1305,
+                "name": "Mali",
+                "nameLocation": "2163:4:6",
+                "nodeType": "EnumValue",
+                "src": "2163:4:6"
+              },
+              {
+                "id": 1306,
+                "name": "Malta",
+                "nameLocation": "2171:5:6",
+                "nodeType": "EnumValue",
+                "src": "2171:5:6"
+              },
+              {
+                "id": 1307,
+                "name": "Marshall_Islands",
+                "nameLocation": "2180:16:6",
+                "nodeType": "EnumValue",
+                "src": "2180:16:6"
+              },
+              {
+                "id": 1308,
+                "name": "Mauritania",
+                "nameLocation": "2200:10:6",
+                "nodeType": "EnumValue",
+                "src": "2200:10:6"
+              },
+              {
+                "id": 1309,
+                "name": "Mauritius",
+                "nameLocation": "2214:9:6",
+                "nodeType": "EnumValue",
+                "src": "2214:9:6"
+              },
+              {
+                "id": 1310,
+                "name": "Mexico",
+                "nameLocation": "2227:6:6",
+                "nodeType": "EnumValue",
+                "src": "2227:6:6"
+              },
+              {
+                "id": 1311,
+                "name": "Micronesia",
+                "nameLocation": "2237:10:6",
+                "nodeType": "EnumValue",
+                "src": "2237:10:6"
+              },
+              {
+                "id": 1312,
+                "name": "Moldova",
+                "nameLocation": "2251:7:6",
+                "nodeType": "EnumValue",
+                "src": "2251:7:6"
+              },
+              {
+                "id": 1313,
+                "name": "Monaco",
+                "nameLocation": "2262:6:6",
+                "nodeType": "EnumValue",
+                "src": "2262:6:6"
+              },
+              {
+                "id": 1314,
+                "name": "Mongolia",
+                "nameLocation": "2272:8:6",
+                "nodeType": "EnumValue",
+                "src": "2272:8:6"
+              },
+              {
+                "id": 1315,
+                "name": "Montenegro",
+                "nameLocation": "2284:10:6",
+                "nodeType": "EnumValue",
+                "src": "2284:10:6"
+              },
+              {
+                "id": 1316,
+                "name": "Morocco",
+                "nameLocation": "2298:7:6",
+                "nodeType": "EnumValue",
+                "src": "2298:7:6"
+              },
+              {
+                "id": 1317,
+                "name": "Mozambique",
+                "nameLocation": "2309:10:6",
+                "nodeType": "EnumValue",
+                "src": "2309:10:6"
+              },
+              {
+                "id": 1318,
+                "name": "Myanmar",
+                "nameLocation": "2323:7:6",
+                "nodeType": "EnumValue",
+                "src": "2323:7:6"
+              },
+              {
+                "id": 1319,
+                "name": "Namibia",
+                "nameLocation": "2334:7:6",
+                "nodeType": "EnumValue",
+                "src": "2334:7:6"
+              },
+              {
+                "id": 1320,
+                "name": "Nauru",
+                "nameLocation": "2345:5:6",
+                "nodeType": "EnumValue",
+                "src": "2345:5:6"
+              },
+              {
+                "id": 1321,
+                "name": "Nepal",
+                "nameLocation": "2354:5:6",
+                "nodeType": "EnumValue",
+                "src": "2354:5:6"
+              },
+              {
+                "id": 1322,
+                "name": "Netherlands",
+                "nameLocation": "2363:11:6",
+                "nodeType": "EnumValue",
+                "src": "2363:11:6"
+              },
+              {
+                "id": 1323,
+                "name": "New_Zealand",
+                "nameLocation": "2378:11:6",
+                "nodeType": "EnumValue",
+                "src": "2378:11:6"
+              },
+              {
+                "id": 1324,
+                "name": "Nicaragua",
+                "nameLocation": "2393:9:6",
+                "nodeType": "EnumValue",
+                "src": "2393:9:6"
+              },
+              {
+                "id": 1325,
+                "name": "Niger",
+                "nameLocation": "2406:5:6",
+                "nodeType": "EnumValue",
+                "src": "2406:5:6"
+              },
+              {
+                "id": 1326,
+                "name": "Nigeria",
+                "nameLocation": "2415:7:6",
+                "nodeType": "EnumValue",
+                "src": "2415:7:6"
+              },
+              {
+                "id": 1327,
+                "name": "Norway",
+                "nameLocation": "2426:6:6",
+                "nodeType": "EnumValue",
+                "src": "2426:6:6"
+              },
+              {
+                "id": 1328,
+                "name": "Oman",
+                "nameLocation": "2436:4:6",
+                "nodeType": "EnumValue",
+                "src": "2436:4:6"
+              },
+              {
+                "id": 1329,
+                "name": "Pakistan",
+                "nameLocation": "2444:8:6",
+                "nodeType": "EnumValue",
+                "src": "2444:8:6"
+              },
+              {
+                "id": 1330,
+                "name": "Palau",
+                "nameLocation": "2456:5:6",
+                "nodeType": "EnumValue",
+                "src": "2456:5:6"
+              },
+              {
+                "id": 1331,
+                "name": "Panama",
+                "nameLocation": "2465:6:6",
+                "nodeType": "EnumValue",
+                "src": "2465:6:6"
+              },
+              {
+                "id": 1332,
+                "name": "Papua_New_Guinea",
+                "nameLocation": "2475:16:6",
+                "nodeType": "EnumValue",
+                "src": "2475:16:6"
+              },
+              {
+                "id": 1333,
+                "name": "Paraguay",
+                "nameLocation": "2495:8:6",
+                "nodeType": "EnumValue",
+                "src": "2495:8:6"
+              },
+              {
+                "id": 1334,
+                "name": "Peru",
+                "nameLocation": "2507:4:6",
+                "nodeType": "EnumValue",
+                "src": "2507:4:6"
+              },
+              {
+                "id": 1335,
+                "name": "Philippines",
+                "nameLocation": "2515:11:6",
+                "nodeType": "EnumValue",
+                "src": "2515:11:6"
+              },
+              {
+                "id": 1336,
+                "name": "Poland",
+                "nameLocation": "2530:6:6",
+                "nodeType": "EnumValue",
+                "src": "2530:6:6"
+              },
+              {
+                "id": 1337,
+                "name": "Portugal",
+                "nameLocation": "2540:8:6",
+                "nodeType": "EnumValue",
+                "src": "2540:8:6"
+              },
+              {
+                "id": 1338,
+                "name": "Qatar",
+                "nameLocation": "2552:5:6",
+                "nodeType": "EnumValue",
+                "src": "2552:5:6"
+              },
+              {
+                "id": 1339,
+                "name": "Romania",
+                "nameLocation": "2561:7:6",
+                "nodeType": "EnumValue",
+                "src": "2561:7:6"
+              },
+              {
+                "id": 1340,
+                "name": "Russian_Federation",
+                "nameLocation": "2572:18:6",
+                "nodeType": "EnumValue",
+                "src": "2572:18:6"
+              },
+              {
+                "id": 1341,
+                "name": "Rwanda",
+                "nameLocation": "2594:6:6",
+                "nodeType": "EnumValue",
+                "src": "2594:6:6"
+              },
+              {
+                "id": 1342,
+                "name": "St_Kitts_and_Nevis",
+                "nameLocation": "2604:18:6",
+                "nodeType": "EnumValue",
+                "src": "2604:18:6"
+              },
+              {
+                "id": 1343,
+                "name": "St_Lucia",
+                "nameLocation": "2626:8:6",
+                "nodeType": "EnumValue",
+                "src": "2626:8:6"
+              },
+              {
+                "id": 1344,
+                "name": "Saint_Vincent_and_the_Grenadines",
+                "nameLocation": "2638:32:6",
+                "nodeType": "EnumValue",
+                "src": "2638:32:6"
+              },
+              {
+                "id": 1345,
+                "name": "Samoa",
+                "nameLocation": "2674:5:6",
+                "nodeType": "EnumValue",
+                "src": "2674:5:6"
+              },
+              {
+                "id": 1346,
+                "name": "San_Marino",
+                "nameLocation": "2683:10:6",
+                "nodeType": "EnumValue",
+                "src": "2683:10:6"
+              },
+              {
+                "id": 1347,
+                "name": "Sao_Tome_and_Principe",
+                "nameLocation": "2697:21:6",
+                "nodeType": "EnumValue",
+                "src": "2697:21:6"
+              },
+              {
+                "id": 1348,
+                "name": "Saudi_Arabia",
+                "nameLocation": "2722:12:6",
+                "nodeType": "EnumValue",
+                "src": "2722:12:6"
+              },
+              {
+                "id": 1349,
+                "name": "Senegal",
+                "nameLocation": "2738:7:6",
+                "nodeType": "EnumValue",
+                "src": "2738:7:6"
+              },
+              {
+                "id": 1350,
+                "name": "Serbia",
+                "nameLocation": "2749:6:6",
+                "nodeType": "EnumValue",
+                "src": "2749:6:6"
+              },
+              {
+                "id": 1351,
+                "name": "Seychelles",
+                "nameLocation": "2759:10:6",
+                "nodeType": "EnumValue",
+                "src": "2759:10:6"
+              },
+              {
+                "id": 1352,
+                "name": "Sierra_Leone",
+                "nameLocation": "2773:12:6",
+                "nodeType": "EnumValue",
+                "src": "2773:12:6"
+              },
+              {
+                "id": 1353,
+                "name": "Singapore",
+                "nameLocation": "2789:9:6",
+                "nodeType": "EnumValue",
+                "src": "2789:9:6"
+              },
+              {
+                "id": 1354,
+                "name": "Slovakia",
+                "nameLocation": "2802:8:6",
+                "nodeType": "EnumValue",
+                "src": "2802:8:6"
+              },
+              {
+                "id": 1355,
+                "name": "Slovenia",
+                "nameLocation": "2814:8:6",
+                "nodeType": "EnumValue",
+                "src": "2814:8:6"
+              },
+              {
+                "id": 1356,
+                "name": "Solomon_Islands",
+                "nameLocation": "2826:15:6",
+                "nodeType": "EnumValue",
+                "src": "2826:15:6"
+              },
+              {
+                "id": 1357,
+                "name": "Somalia",
+                "nameLocation": "2845:7:6",
+                "nodeType": "EnumValue",
+                "src": "2845:7:6"
+              },
+              {
+                "id": 1358,
+                "name": "South_Africa",
+                "nameLocation": "2856:12:6",
+                "nodeType": "EnumValue",
+                "src": "2856:12:6"
+              },
+              {
+                "id": 1359,
+                "name": "South_Sudan",
+                "nameLocation": "2872:11:6",
+                "nodeType": "EnumValue",
+                "src": "2872:11:6"
+              },
+              {
+                "id": 1360,
+                "name": "Spain",
+                "nameLocation": "2887:5:6",
+                "nodeType": "EnumValue",
+                "src": "2887:5:6"
+              },
+              {
+                "id": 1361,
+                "name": "Sri_Lanka",
+                "nameLocation": "2896:9:6",
+                "nodeType": "EnumValue",
+                "src": "2896:9:6"
+              },
+              {
+                "id": 1362,
+                "name": "Sudan",
+                "nameLocation": "2909:5:6",
+                "nodeType": "EnumValue",
+                "src": "2909:5:6"
+              },
+              {
+                "id": 1363,
+                "name": "Suriname",
+                "nameLocation": "2918:8:6",
+                "nodeType": "EnumValue",
+                "src": "2918:8:6"
+              },
+              {
+                "id": 1364,
+                "name": "Swaziland",
+                "nameLocation": "2930:9:6",
+                "nodeType": "EnumValue",
+                "src": "2930:9:6"
+              },
+              {
+                "id": 1365,
+                "name": "Sweden",
+                "nameLocation": "2943:6:6",
+                "nodeType": "EnumValue",
+                "src": "2943:6:6"
+              },
+              {
+                "id": 1366,
+                "name": "Switzerland",
+                "nameLocation": "2953:11:6",
+                "nodeType": "EnumValue",
+                "src": "2953:11:6"
+              },
+              {
+                "id": 1367,
+                "name": "Syria",
+                "nameLocation": "2968:5:6",
+                "nodeType": "EnumValue",
+                "src": "2968:5:6"
+              },
+              {
+                "id": 1368,
+                "name": "Taiwan",
+                "nameLocation": "2977:6:6",
+                "nodeType": "EnumValue",
+                "src": "2977:6:6"
+              },
+              {
+                "id": 1369,
+                "name": "Tajikistan",
+                "nameLocation": "2987:10:6",
+                "nodeType": "EnumValue",
+                "src": "2987:10:6"
+              },
+              {
+                "id": 1370,
+                "name": "Tanzania",
+                "nameLocation": "3001:8:6",
+                "nodeType": "EnumValue",
+                "src": "3001:8:6"
+              },
+              {
+                "id": 1371,
+                "name": "Thailand",
+                "nameLocation": "3013:8:6",
+                "nodeType": "EnumValue",
+                "src": "3013:8:6"
+              },
+              {
+                "id": 1372,
+                "name": "Togo",
+                "nameLocation": "3025:4:6",
+                "nodeType": "EnumValue",
+                "src": "3025:4:6"
+              },
+              {
+                "id": 1373,
+                "name": "Tonga",
+                "nameLocation": "3033:5:6",
+                "nodeType": "EnumValue",
+                "src": "3033:5:6"
+              },
+              {
+                "id": 1374,
+                "name": "Trinidad_and_Tobago",
+                "nameLocation": "3042:19:6",
+                "nodeType": "EnumValue",
+                "src": "3042:19:6"
+              },
+              {
+                "id": 1375,
+                "name": "Tunisia",
+                "nameLocation": "3065:7:6",
+                "nodeType": "EnumValue",
+                "src": "3065:7:6"
+              },
+              {
+                "id": 1376,
+                "name": "Turkey",
+                "nameLocation": "3076:6:6",
+                "nodeType": "EnumValue",
+                "src": "3076:6:6"
+              },
+              {
+                "id": 1377,
+                "name": "Turkmenistan",
+                "nameLocation": "3086:12:6",
+                "nodeType": "EnumValue",
+                "src": "3086:12:6"
+              },
+              {
+                "id": 1378,
+                "name": "Tuvalu",
+                "nameLocation": "3102:6:6",
+                "nodeType": "EnumValue",
+                "src": "3102:6:6"
+              },
+              {
+                "id": 1379,
+                "name": "Uganda",
+                "nameLocation": "3112:6:6",
+                "nodeType": "EnumValue",
+                "src": "3112:6:6"
+              },
+              {
+                "id": 1380,
+                "name": "Ukraine",
+                "nameLocation": "3122:7:6",
+                "nodeType": "EnumValue",
+                "src": "3122:7:6"
+              },
+              {
+                "id": 1381,
+                "name": "United_Arab_Emirates",
+                "nameLocation": "3133:20:6",
+                "nodeType": "EnumValue",
+                "src": "3133:20:6"
+              },
+              {
+                "id": 1382,
+                "name": "United_Kingdom",
+                "nameLocation": "3157:14:6",
+                "nodeType": "EnumValue",
+                "src": "3157:14:6"
+              },
+              {
+                "id": 1383,
+                "name": "United_States",
+                "nameLocation": "3175:13:6",
+                "nodeType": "EnumValue",
+                "src": "3175:13:6"
+              },
+              {
+                "id": 1384,
+                "name": "Uruguay",
+                "nameLocation": "3192:7:6",
+                "nodeType": "EnumValue",
+                "src": "3192:7:6"
+              },
+              {
+                "id": 1385,
+                "name": "Uzbekistan",
+                "nameLocation": "3203:10:6",
+                "nodeType": "EnumValue",
+                "src": "3203:10:6"
+              },
+              {
+                "id": 1386,
+                "name": "Vanuatu",
+                "nameLocation": "3217:7:6",
+                "nodeType": "EnumValue",
+                "src": "3217:7:6"
+              },
+              {
+                "id": 1387,
+                "name": "Vatican_City",
+                "nameLocation": "3228:12:6",
+                "nodeType": "EnumValue",
+                "src": "3228:12:6"
+              },
+              {
+                "id": 1388,
+                "name": "Venezuela",
+                "nameLocation": "3244:9:6",
+                "nodeType": "EnumValue",
+                "src": "3244:9:6"
+              },
+              {
+                "id": 1389,
+                "name": "Vietnam",
+                "nameLocation": "3257:7:6",
+                "nodeType": "EnumValue",
+                "src": "3257:7:6"
+              },
+              {
+                "id": 1390,
+                "name": "Yemen",
+                "nameLocation": "3268:5:6",
+                "nodeType": "EnumValue",
+                "src": "3268:5:6"
+              },
+              {
+                "id": 1391,
+                "name": "Zambia",
+                "nameLocation": "3277:6:6",
+                "nodeType": "EnumValue",
+                "src": "3277:6:6"
+              },
+              {
+                "id": 1392,
+                "name": "Zimbabwe",
+                "nameLocation": "3287:8:6",
+                "nodeType": "EnumValue",
+                "src": "3287:8:6"
+              }
+            ],
+            "name": "Country",
+            "nameLocation": "868:7:6"
+          },
+          {
+            "id": 1402,
+            "nodeType": "FunctionDefinition",
+            "src": "3440:93:6",
+            "functionSelector": "ce45c55d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "newIdentity",
+            "nameLocation": "3449:11:6",
+            "parameters": {
+              "id": 1398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1395,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "3469:7:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1402,
+                  "src": "3461:15:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1394,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3461:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1397,
+                  "mutability": "mutable",
+                  "name": "country",
+                  "nameLocation": "3485:7:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1402,
+                  "src": "3478:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1396,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3478:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3460:33:6"
+            },
+            "returnParameters": {
+              "id": 1401,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1400,
+                  "mutability": "mutable",
+                  "name": "identityId_",
+                  "nameLocation": "3520:11:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1402,
+                  "src": "3512:19:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1399,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3512:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3511:21:6"
+            },
+            "scope": 1452,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1407,
+            "nodeType": "FunctionDefinition",
+            "src": "3538:59:6",
+            "functionSelector": "4d083a9e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deleteIdentityByAddress",
+            "nameLocation": "3547:23:6",
+            "parameters": {
+              "id": 1405,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1404,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "3579:7:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1407,
+                  "src": "3571:15:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1403,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3571:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3570:17:6"
+            },
+            "returnParameters": {
+              "id": 1406,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3596:0:6"
+            },
+            "scope": 1452,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1412,
+            "nodeType": "FunctionDefinition",
+            "src": "3602:51:6",
+            "functionSelector": "ffb94cb3",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deleteIdentity",
+            "nameLocation": "3611:14:6",
+            "parameters": {
+              "id": 1410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1409,
+                  "mutability": "mutable",
+                  "name": "identity",
+                  "nameLocation": "3634:8:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1412,
+                  "src": "3626:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1408,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3626:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3625:18:6"
+            },
+            "returnParameters": {
+              "id": 1411,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3652:0:6"
+            },
+            "scope": 1452,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1419,
+            "nodeType": "FunctionDefinition",
+            "src": "3826:64:6",
+            "functionSelector": "011493af",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setCountry",
+            "nameLocation": "3835:10:6",
+            "parameters": {
+              "id": 1417,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1414,
+                  "mutability": "mutable",
+                  "name": "identity",
+                  "nameLocation": "3854:8:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1419,
+                  "src": "3846:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1413,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3846:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1416,
+                  "mutability": "mutable",
+                  "name": "country",
+                  "nameLocation": "3872:7:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1419,
+                  "src": "3865:14:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1415,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3865:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3845:35:6"
+            },
+            "returnParameters": {
+              "id": 1418,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3889:0:6"
+            },
+            "scope": 1452,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1428,
+            "nodeType": "FunctionDefinition",
+            "src": "4015:84:6",
+            "functionSelector": "f2f5cd1d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getIdentityByAddress",
+            "nameLocation": "4024:20:6",
+            "parameters": {
+              "id": 1422,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1421,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "4053:7:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1428,
+                  "src": "4045:15:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1420,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4045:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4044:17:6"
+            },
+            "returnParameters": {
+              "id": 1427,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1424,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1428,
+                  "src": "4085:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1423,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4085:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1426,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1428,
+                  "src": "4091:6:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1425,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4091:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4084:14:6"
+            },
+            "scope": 1452,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1437,
+            "nodeType": "FunctionDefinition",
+            "src": "4101:76:6",
+            "functionSelector": "85e3f058",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getIdentity",
+            "nameLocation": "4110:11:6",
+            "parameters": {
+              "id": 1431,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1430,
+                  "mutability": "mutable",
+                  "name": "identity",
+                  "nameLocation": "4130:8:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1437,
+                  "src": "4122:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1429,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4122:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4121:18:6"
+            },
+            "returnParameters": {
+              "id": 1436,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1433,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1437,
+                  "src": "4163:4:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 1432,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4163:4:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1435,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1437,
+                  "src": "4169:6:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1434,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4169:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4162:14:6"
+            },
+            "scope": 1452,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1444,
+            "nodeType": "FunctionDefinition",
+            "src": "4182:69:6",
+            "functionSelector": "afa5e0a9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCountry",
+            "nameLocation": "4191:10:6",
+            "parameters": {
+              "id": 1440,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1439,
+                  "mutability": "mutable",
+                  "name": "identity",
+                  "nameLocation": "4210:8:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1444,
+                  "src": "4202:16:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1438,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4202:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4201:18:6"
+            },
+            "returnParameters": {
+              "id": 1443,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1442,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1444,
+                  "src": "4243:6:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1441,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4243:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4242:8:6"
+            },
+            "scope": 1452,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 1451,
+            "nodeType": "FunctionDefinition",
+            "src": "4256:77:6",
+            "functionSelector": "d182704a",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCountryByAddress",
+            "nameLocation": "4265:19:6",
+            "parameters": {
+              "id": 1447,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1446,
+                  "mutability": "mutable",
+                  "name": "account",
+                  "nameLocation": "4293:7:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1451,
+                  "src": "4285:15:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1445,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4285:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4284:17:6"
+            },
+            "returnParameters": {
+              "id": 1450,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1449,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1451,
+                  "src": "4325:6:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  },
+                  "typeName": {
+                    "id": 1448,
+                    "name": "uint16",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "4325:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint16",
+                      "typeString": "uint16"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "4324:8:6"
+            },
+            "scope": 1452,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IHyperbaseIdentityRegistry",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          1452
+        ],
+        "name": "IHyperbaseIdentityRegistry",
+        "nameLocation": "72:26:6",
+        "scope": 1453,
+        "usedErrors": [
+          1175
+        ]
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 6
+}
