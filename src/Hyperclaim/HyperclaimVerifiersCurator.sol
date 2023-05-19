@@ -3,11 +3,11 @@
 pragma solidity ^0.8.6;
 
 import 'openzeppelin-contracts/contracts/access/Ownable.sol';
-import '../Interface/IHyperbaseVerifiersCurator.sol';
+import '../Interface/IHyperclaimVerifiersCurator.sol';
 
 // Curator manages the addition of verifiers to the verifiers registry via submission and voting
 
-contract HyperbaseVerifiersCurator is IHyperbaseVerifiersCurator, Ownable {
+contract HyperclaimVerifiersCurator is IHyperclaimVerifiersCurator, Ownable {
 
 	enum Status {
 		REVIEWING;

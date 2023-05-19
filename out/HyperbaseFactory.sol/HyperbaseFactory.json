@@ -12,10 +12,10 @@
   },
   "methodIdentifiers": {},
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/HyperbaseFactory.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/HyperclaimFactory.sol",
     "id": 33199,
     "exportedSymbols": {
-      "HyperbaseFactory": [
+      "HyperclaimFactory": [
         33198
       ]
     },
@@ -39,14 +39,14 @@
         "src": "66:45:30",
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "HyperbaseFactory",
+        "canonicalName": "HyperclaimFactory",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
           33198
         ],
-        "name": "HyperbaseFactory",
+        "name": "HyperclaimFactory",
         "nameLocation": "75:16:30",
         "scope": 33199,
         "usedErrors": []

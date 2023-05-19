@@ -189,10 +189,10 @@
   },
   "methodIdentifiers": {},
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbase.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaim.sol",
     "id": 4732,
     "exportedSymbols": {
-      "IHyperbase": [
+      "IHyperclaim": [
         4731
       ]
     },
@@ -219,7 +219,7 @@
             "id": 4662,
             "nodeType": "EnumDefinition",
             "src": "164:77:14",
-            "canonicalName": "IHyperbase.Permission",
+            "canonicalName": "IHyperclaim.Permission",
             "members": [
               {
                 "id": 4659,
@@ -250,7 +250,7 @@
             "id": 4668,
             "nodeType": "EnumDefinition",
             "src": "278:113:14",
-            "canonicalName": "IHyperbase.Status",
+            "canonicalName": "IHyperclaim.Status",
             "members": [
               {
                 "id": 4663,
@@ -1042,14 +1042,14 @@
         ],
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "IHyperbase",
+        "canonicalName": "IHyperclaim",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
           4731
         ],
-        "name": "IHyperbase",
+        "name": "IHyperclaim",
         "nameLocation": "76:10:14",
         "scope": 4732,
         "usedErrors": []

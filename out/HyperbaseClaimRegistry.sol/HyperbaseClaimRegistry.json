@@ -441,19 +441,19 @@
     "transferOwnership(address)": "f2fde38b"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/HyperbaseClaimRegistry.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/HyperclaimRegistry.sol",
     "id": 543,
     "exportedSymbols": {
       "Context": [
         126
       ],
-      "HyperbaseClaimRegistry": [
+      "HyperclaimRegistry": [
         542
       ],
-      "IHyperbaseClaimRegistry": [
+      "IHyperclaimRegistry": [
         1170
       ],
-      "IHyperbaseVerifiersRegistry": [
+      "IHyperclaimVerifiersRegistry": [
         1524
       ],
       "Ownable": [
@@ -478,7 +478,7 @@
         "id": 129,
         "nodeType": "ImportDirective",
         "src": "79:61:2",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
         "file": "openzeppelin-contracts/contracts/access/Ownable.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 543,
@@ -490,8 +490,8 @@
         "id": 130,
         "nodeType": "ImportDirective",
         "src": "142:50:2",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseClaimRegistry.sol",
-        "file": "../Interface/IHyperbaseClaimRegistry.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimRegistry.sol",
+        "file": "../Interface/IHyperclaimRegistry.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 543,
         "sourceUnit": 1171,
@@ -502,8 +502,8 @@
         "id": 131,
         "nodeType": "ImportDirective",
         "src": "211:54:2",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseVerifiersRegistry.sol",
-        "file": "../Interface/IHyperbaseVerifiersRegistry.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimVerifiersRegistry.sol",
+        "file": "../Interface/IHyperclaimVerifiersRegistry.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 543,
         "sourceUnit": 1525,
@@ -533,15 +533,15 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_IHyperbaseVerifiersRegistry_$1524",
-              "typeString": "contract IHyperbaseVerifiersRegistry"
+              "typeIdentifier": "t_contract$_IHyperclaimVerifiersRegistry_$1524",
+              "typeString": "contract IHyperclaimVerifiersRegistry"
             },
             "typeName": {
               "id": 138,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
                 "id": 137,
-                "name": "IHyperbaseVerifiersRegistry",
+                "name": "IHyperclaimVerifiersRegistry",
                 "nodeType": "IdentifierPath",
                 "referencedDeclaration": 1524,
                 "src": "526:27:2"
@@ -549,8 +549,8 @@
               "referencedDeclaration": 1524,
               "src": "526:27:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IHyperbaseVerifiersRegistry_$1524",
-                "typeString": "contract IHyperbaseVerifiersRegistry"
+                "typeIdentifier": "t_contract$_IHyperclaimVerifiersRegistry_$1524",
+                "typeString": "contract IHyperclaimVerifiersRegistry"
               }
             },
             "visibility": "internal"
@@ -559,7 +559,7 @@
             "id": 150,
             "nodeType": "StructDefinition",
             "src": "706:136:2",
-            "canonicalName": "HyperbaseClaimRegistry.Claim",
+            "canonicalName": "HyperclaimRegistry.Claim",
             "members": [
               {
                 "constant": false,
@@ -723,7 +723,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-              "typeString": "struct HyperbaseClaimRegistry.Claim[]"
+              "typeString": "struct HyperclaimRegistry.Claim[]"
             },
             "typeName": {
               "baseType": {
@@ -740,7 +740,7 @@
                 "src": "902:5:2",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_Claim_$150_storage_ptr",
-                  "typeString": "struct HyperbaseClaimRegistry.Claim"
+                  "typeString": "struct HyperclaimRegistry.Claim"
                 }
               },
               "id": 154,
@@ -748,7 +748,7 @@
               "src": "902:7:2",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage_ptr",
-                "typeString": "struct HyperbaseClaimRegistry.Claim[]"
+                "typeString": "struct HyperclaimRegistry.Claim[]"
               }
             },
             "visibility": "internal"
@@ -1265,7 +1265,7 @@
                           "src": "1985:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                           }
                         },
                         "id": 207,
@@ -1289,7 +1289,7 @@
                         "src": "1985:14:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Claim_$150_storage",
-                          "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                          "typeString": "struct HyperclaimRegistry.Claim storage ref"
                         }
                       },
                       "id": 208,
@@ -1476,7 +1476,7 @@
                             "src": "2225:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                             }
                           },
                           "id": 225,
@@ -1500,7 +1500,7 @@
                           "src": "2225:14:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Claim_$150_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref"
                           }
                         },
                         "id": 226,
@@ -1578,7 +1578,7 @@
                             "src": "2266:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                             }
                           },
                           "id": 232,
@@ -1602,7 +1602,7 @@
                           "src": "2266:14:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Claim_$150_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref"
                           }
                         },
                         "id": 233,
@@ -1753,7 +1753,7 @@
                           "src": "2466:7:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                           }
                         },
                         "id": 249,
@@ -1777,7 +1777,7 @@
                         "src": "2466:14:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Claim_$150_storage",
-                          "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                          "typeString": "struct HyperclaimRegistry.Claim storage ref"
                         }
                       },
                       "id": 250,
@@ -2004,7 +2004,7 @@
                       "storageLocation": "memory",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Claim_$150_memory_ptr",
-                        "typeString": "struct HyperbaseClaimRegistry.Claim"
+                        "typeString": "struct HyperclaimRegistry.Claim"
                       },
                       "typeName": {
                         "id": 279,
@@ -2020,7 +2020,7 @@
                         "src": "3250:5:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Claim_$150_storage_ptr",
-                          "typeString": "struct HyperbaseClaimRegistry.Claim"
+                          "typeString": "struct HyperclaimRegistry.Claim"
                         }
                       },
                       "visibility": "internal"
@@ -2121,7 +2121,7 @@
                       "src": "3271:5:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_struct$_Claim_$150_storage_ptr_$",
-                        "typeString": "type(struct HyperbaseClaimRegistry.Claim storage pointer)"
+                        "typeString": "type(struct HyperclaimRegistry.Claim storage pointer)"
                       }
                     },
                     "id": 287,
@@ -2136,7 +2136,7 @@
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Claim_$150_memory_ptr",
-                      "typeString": "struct HyperbaseClaimRegistry.Claim memory"
+                      "typeString": "struct HyperclaimRegistry.Claim memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -2154,7 +2154,7 @@
                         "src": "3448:5:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Claim_$150_memory_ptr",
-                          "typeString": "struct HyperbaseClaimRegistry.Claim memory"
+                          "typeString": "struct HyperclaimRegistry.Claim memory"
                         }
                       }
                     ],
@@ -2162,7 +2162,7 @@
                       "argumentTypes": [
                         {
                           "typeIdentifier": "t_struct$_Claim_$150_memory_ptr",
-                          "typeString": "struct HyperbaseClaimRegistry.Claim memory"
+                          "typeString": "struct HyperclaimRegistry.Claim memory"
                         }
                       ],
                       "expression": {
@@ -2174,7 +2174,7 @@
                         "src": "3435:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                          "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                          "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                         }
                       },
                       "id": 291,
@@ -2187,7 +2187,7 @@
                       "src": "3435:12:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Claim_$150_storage_$dyn_storage_ptr_$_t_struct$_Claim_$150_storage_$returns$__$bound_to$_t_array$_t_struct$_Claim_$150_storage_$dyn_storage_ptr_$",
-                        "typeString": "function (struct HyperbaseClaimRegistry.Claim storage ref[] storage pointer,struct HyperbaseClaimRegistry.Claim storage ref)"
+                        "typeString": "function (struct HyperclaimRegistry.Claim storage ref[] storage pointer,struct HyperclaimRegistry.Claim storage ref)"
                       }
                     },
                     "id": 293,
@@ -2240,7 +2240,7 @@
                         "src": "3481:7:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                          "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                          "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                         }
                       },
                       "id": 297,
@@ -4097,7 +4097,7 @@
                             "src": "6570:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                             }
                           },
                           "id": 455,
@@ -4121,7 +4121,7 @@
                           "src": "6570:14:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Claim_$150_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref"
                           }
                         },
                         "id": 456,
@@ -4149,7 +4149,7 @@
                             "src": "6605:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                             }
                           },
                           "id": 459,
@@ -4173,7 +4173,7 @@
                           "src": "6605:14:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Claim_$150_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref"
                           }
                         },
                         "id": 460,
@@ -4201,7 +4201,7 @@
                             "src": "6641:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                             }
                           },
                           "id": 463,
@@ -4225,7 +4225,7 @@
                           "src": "6641:14:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Claim_$150_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref"
                           }
                         },
                         "id": 464,
@@ -4253,7 +4253,7 @@
                             "src": "6677:7:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                             }
                           },
                           "id": 467,
@@ -4277,7 +4277,7 @@
                           "src": "6677:14:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Claim_$150_storage",
-                            "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                            "typeString": "struct HyperclaimRegistry.Claim storage ref"
                           }
                         },
                         "id": 468,
@@ -4557,7 +4557,7 @@
                               "src": "7160:7:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                                "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                                "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                               }
                             },
                             "id": 487,
@@ -4581,7 +4581,7 @@
                             "src": "7160:14:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Claim_$150_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref"
                             }
                           },
                           "id": 488,
@@ -4614,8 +4614,8 @@
                           "referencedDeclaration": 139,
                           "src": "7133:10:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IHyperbaseVerifiersRegistry_$1524",
-                            "typeString": "contract IHyperbaseVerifiersRegistry"
+                            "typeIdentifier": "t_contract$_IHyperclaimVerifiersRegistry_$1524",
+                            "typeString": "contract IHyperclaimVerifiersRegistry"
                           }
                         },
                         "id": 484,
@@ -4670,7 +4670,7 @@
                               "src": "7240:7:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                                "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                                "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                               }
                             },
                             "id": 495,
@@ -4694,7 +4694,7 @@
                             "src": "7240:14:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Claim_$150_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref"
                             }
                           },
                           "id": 496,
@@ -4722,7 +4722,7 @@
                               "src": "7263:7:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Claim_$150_storage_$dyn_storage",
-                                "typeString": "struct HyperbaseClaimRegistry.Claim storage ref[] storage ref"
+                                "typeString": "struct HyperclaimRegistry.Claim storage ref[] storage ref"
                               }
                             },
                             "id": 499,
@@ -4746,7 +4746,7 @@
                             "src": "7263:14:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Claim_$150_storage",
-                              "typeString": "struct HyperbaseClaimRegistry.Claim storage ref"
+                              "typeString": "struct HyperclaimRegistry.Claim storage ref"
                             }
                           },
                           "id": 500,
@@ -4783,8 +4783,8 @@
                           "referencedDeclaration": 139,
                           "src": "7201:10:2",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_IHyperbaseVerifiersRegistry_$1524",
-                            "typeString": "contract IHyperbaseVerifiersRegistry"
+                            "typeIdentifier": "t_contract$_IHyperclaimVerifiersRegistry_$1524",
+                            "typeString": "contract IHyperclaimVerifiersRegistry"
                           }
                         },
                         "id": 492,
@@ -5121,8 +5121,8 @@
                       "referencedDeclaration": 139,
                       "src": "8049:10:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IHyperbaseVerifiersRegistry_$1524",
-                        "typeString": "contract IHyperbaseVerifiersRegistry"
+                        "typeIdentifier": "t_contract$_IHyperclaimVerifiersRegistry_$1524",
+                        "typeString": "contract IHyperclaimVerifiersRegistry"
                       }
                     },
                     "nodeType": "Assignment",
@@ -5150,14 +5150,14 @@
                           }
                         ],
                         "id": 531,
-                        "name": "IHyperbaseVerifiersRegistry",
+                        "name": "IHyperclaimVerifiersRegistry",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 1524,
                         "src": "8062:27:2",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_IHyperbaseVerifiersRegistry_$1524_$",
-                          "typeString": "type(contract IHyperbaseVerifiersRegistry)"
+                          "typeIdentifier": "t_type$_t_contract$_IHyperclaimVerifiersRegistry_$1524_$",
+                          "typeString": "type(contract IHyperclaimVerifiersRegistry)"
                         }
                       },
                       "id": 533,
@@ -5171,14 +5171,14 @@
                       "src": "8062:38:2",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IHyperbaseVerifiersRegistry_$1524",
-                        "typeString": "contract IHyperbaseVerifiersRegistry"
+                        "typeIdentifier": "t_contract$_IHyperclaimVerifiersRegistry_$1524",
+                        "typeString": "contract IHyperclaimVerifiersRegistry"
                       }
                     },
                     "src": "8049:51:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IHyperbaseVerifiersRegistry_$1524",
-                      "typeString": "contract IHyperbaseVerifiersRegistry"
+                      "typeIdentifier": "t_contract$_IHyperclaimVerifiersRegistry_$1524",
+                      "typeString": "contract IHyperclaimVerifiersRegistry"
                     }
                   },
                   "id": 535,
@@ -5318,7 +5318,7 @@
           {
             "baseName": {
               "id": 132,
-              "name": "IHyperbaseClaimRegistry",
+              "name": "IHyperclaimRegistry",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1170,
               "src": "304:23:2"
@@ -5340,7 +5340,7 @@
             "src": "329:7:2"
           }
         ],
-        "canonicalName": "HyperbaseClaimRegistry",
+        "canonicalName": "HyperclaimRegistry",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
@@ -5350,7 +5350,7 @@
           126,
           1170
         ],
-        "name": "HyperbaseClaimRegistry",
+        "name": "HyperclaimRegistry",
         "nameLocation": "278:22:2",
         "scope": 543,
         "usedErrors": [

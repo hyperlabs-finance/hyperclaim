@@ -12,7 +12,7 @@
   },
   "methodIdentifiers": {},
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
     "id": 1572,
     "exportedSymbols": {
       "ECDSA": [
@@ -40,7 +40,7 @@
         "id": 1167,
         "nodeType": "ImportDirective",
         "src": "137:24:8",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/Strings.sol",
         "file": "../Strings.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 1572,

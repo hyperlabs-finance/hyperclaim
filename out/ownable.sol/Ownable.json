@@ -69,7 +69,7 @@
     "transferOwnership(address)": "f2fde38b"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
     "id": 105,
     "exportedSymbols": {
       "Context": [
@@ -97,7 +97,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "src": "112:30:0",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/Context.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/Context.sol",
         "file": "../utils/Context.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 105,

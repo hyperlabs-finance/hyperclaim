@@ -361,10 +361,10 @@
     "revokeClaim(uint256)": "c21d89dd"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseClaimRegistry.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimRegistry.sol",
     "id": 1171,
     "exportedSymbols": {
-      "IHyperbaseClaimRegistry": [
+      "IHyperclaimRegistry": [
         1170
       ]
     },
@@ -1940,14 +1940,14 @@
         ],
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "IHyperbaseClaimRegistry",
+        "canonicalName": "IHyperclaimRegistry",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
           1170
         ],
-        "name": "IHyperbaseClaimRegistry",
+        "name": "IHyperclaimRegistry",
         "nameLocation": "72:23:5",
         "scope": 1171,
         "usedErrors": [

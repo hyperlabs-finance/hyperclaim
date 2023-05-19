@@ -4,21 +4,21 @@ pragma solidity ^0.8.6;
 
 // Inherits
 import 'openzeppelin-contracts/contracts/access/Ownable.sol';
-import '../Interface/IHyperbaseClaimRegistry.sol';
+import '../Interface/IHyperclaimRegistry.sol';
 
 // Interfaces
-import '../Interface/IHyperbaseVerifiersRegistry.sol';
+import '../Interface/IHyperclaimVerifiersRegistry.sol';
 
 /**
 
-    HyperbaseClaimRegistry is the central registry where users of the hypersurface protocol can add 
-    claims about themselves and others. These claims are then check in credital-based interactions.
+    HyperclaimRegistry is the central registry where users of the hypersurface protocol can add 
+    claims about themselves and others. These claims are then checked in credital-based interactions.
     Examples of such claims may be that an user is an accredited investor or that the are a citizen
     of a particular jurisdiction.
 
  */
 
-contract HyperbaseClaimRegistry is IHyperbaseClaimRegistry, Ownable {
+contract HyperclaimRegistry is IHyperclaimRegistry, Ownable {
 
   	////////////////
     // INTERFACES
@@ -27,7 +27,7 @@ contract HyperbaseClaimRegistry is IHyperbaseClaimRegistry, Ownable {
     /**
      * @dev The registry of accounts that are authorised to provide claims on particular topics.
      */
-    IHyperbaseVerifiersRegistry _verifiers;
+    IHyperclaimVerifiersRegistry _verifiers;
 
   	////////////////
     // STATE
@@ -321,7 +321,7 @@ contract HyperbaseClaimRegistry is IHyperbaseClaimRegistry, Ownable {
         public 
         onlyOwner
     {
-        _verifiers = IHyperbaseVerifiersRegistry(verifiers);
+        _verifiers = IHyperclaimVerifiersRegistry(verifiers);
 
         emit VerifiersUpdated(verifiers);
     }

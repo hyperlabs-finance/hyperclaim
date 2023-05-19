@@ -183,10 +183,10 @@
     "updateVerifierClaimTopics(address,uint256[])": "ecccf27b"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseVerifiersRegistry.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimVerifiersRegistry.sol",
     "id": 1525,
     "exportedSymbols": {
-      "IHyperbaseVerifiersRegistry": [
+      "IHyperclaimVerifiersRegistry": [
         1524
       ]
     },
@@ -962,14 +962,14 @@
         ],
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "IHyperbaseVerifiersRegistry",
+        "canonicalName": "IHyperclaimVerifiersRegistry",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
           1524
         ],
-        "name": "IHyperbaseVerifiersRegistry",
+        "name": "IHyperclaimVerifiersRegistry",
         "nameLocation": "76:27:7",
         "scope": 1525,
         "usedErrors": [

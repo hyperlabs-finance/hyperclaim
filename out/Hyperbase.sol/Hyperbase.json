@@ -227,7 +227,7 @@
           "type": "address"
         },
         {
-          "internalType": "enum IHyperbase.Permission",
+          "internalType": "enum IHyperclaim.Permission",
           "name": "permission",
           "type": "uint8"
         },
@@ -248,7 +248,7 @@
           "type": "address"
         },
         {
-          "internalType": "enum IHyperbase.Permission",
+          "internalType": "enum IHyperclaim.Permission",
           "name": "permission",
           "type": "uint8"
         }
@@ -421,7 +421,7 @@
           "type": "address"
         },
         {
-          "internalType": "enum IHyperbase.Permission",
+          "internalType": "enum IHyperclaim.Permission",
           "name": "",
           "type": "uint8"
         },
@@ -445,7 +445,7 @@
       "name": "getKeyPermission",
       "outputs": [
         {
-          "internalType": "enum IHyperbase.Permission",
+          "internalType": "enum IHyperclaim.Permission",
           "name": "",
           "type": "uint8"
         }
@@ -506,7 +506,7 @@
       "name": "getRequiredPermission",
       "outputs": [
         {
-          "internalType": "enum IHyperbase.Permission",
+          "internalType": "enum IHyperclaim.Permission",
           "name": "",
           "type": "uint8"
         }
@@ -672,7 +672,7 @@
           "type": "uint8"
         },
         {
-          "internalType": "enum IHyperbase.Permission",
+          "internalType": "enum IHyperclaim.Permission",
           "name": "permission",
           "type": "uint8"
         }
@@ -690,7 +690,7 @@
           "type": "uint256"
         },
         {
-          "internalType": "enum IHyperbase.Status",
+          "internalType": "enum IHyperclaim.Status",
           "name": "status",
           "type": "uint8"
         }
@@ -780,7 +780,7 @@
     "submit(address[],uint256[],bytes[])": "ea39ddd8"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/Hyperbase.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/Hyperclaim.sol",
     "id": 3826,
     "exportedSymbols": {
       "Address": [
@@ -792,13 +792,13 @@
       "ERC2771Context": [
         181
       ],
-      "Hyperbase": [
+      "Hyperclaim": [
         3825
       ],
       "IERC20": [
         430
       ],
-      "IHyperbase": [
+      "IHyperclaim": [
         4731
       ],
       "SafeCast": [
@@ -826,7 +826,7 @@
         "id": 2121,
         "nodeType": "ImportDirective",
         "src": "66:68:11",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/metatx/ERC2771Context.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/metatx/ERC2771Context.sol",
         "file": "openzeppelin-contracts/contracts/metatx/ERC2771Context.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 3826,
@@ -838,7 +838,7 @@
         "id": 2122,
         "nodeType": "ImportDirective",
         "src": "136:65:11",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "file": "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 3826,
@@ -850,8 +850,8 @@
         "id": 2123,
         "nodeType": "ImportDirective",
         "src": "205:37:11",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbase.sol",
-        "file": "../Interface/IHyperbase.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaim.sol",
+        "file": "../Interface/IHyperclaim.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 3826,
         "sourceUnit": 4732,
@@ -862,7 +862,7 @@
         "id": 2124,
         "nodeType": "ImportDirective",
         "src": "244:59:11",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/Timers.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/Timers.sol",
         "file": "openzeppelin-contracts/contracts/utils/Timers.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 3826,
@@ -874,7 +874,7 @@
         "id": 2125,
         "nodeType": "ImportDirective",
         "src": "305:60:11",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/Address.sol",
         "file": "openzeppelin-contracts/contracts/utils/Address.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 3826,
@@ -886,7 +886,7 @@
         "id": 2126,
         "nodeType": "ImportDirective",
         "src": "367:66:11",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/math/SafeCast.sol",
         "file": "openzeppelin-contracts/contracts/utils/math/SafeCast.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 3826,
@@ -1082,7 +1082,7 @@
             "id": 2154,
             "nodeType": "StructDefinition",
             "src": "987:95:11",
-            "canonicalName": "Hyperbase.Key",
+            "canonicalName": "Hyperclaim.Key",
             "members": [
               {
                 "constant": false,
@@ -1125,7 +1125,7 @@
                 "storageLocation": "default",
                 "typeDescriptions": {
                   "typeIdentifier": "t_enum$_Permission_$4662",
-                  "typeString": "enum IHyperbase.Permission"
+                  "typeString": "enum IHyperclaim.Permission"
                 },
                 "typeName": {
                   "id": 2150,
@@ -1141,7 +1141,7 @@
                   "src": "1031:10:11",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Permission_$4662",
-                    "typeString": "enum IHyperbase.Permission"
+                    "typeString": "enum IHyperclaim.Permission"
                   }
                 },
                 "visibility": "internal"
@@ -1193,7 +1193,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-              "typeString": "struct Hyperbase.Key[]"
+              "typeString": "struct Hyperclaim.Key[]"
             },
             "typeName": {
               "baseType": {
@@ -1210,7 +1210,7 @@
                 "src": "1127:3:11",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_Key_$2154_storage_ptr",
-                  "typeString": "struct Hyperbase.Key"
+                  "typeString": "struct Hyperclaim.Key"
                 }
               },
               "id": 2157,
@@ -1218,7 +1218,7 @@
               "src": "1127:5:11",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage_ptr",
-                "typeString": "struct Hyperbase.Key[]"
+                "typeString": "struct Hyperclaim.Key[]"
               }
             },
             "visibility": "public"
@@ -1337,7 +1337,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-              "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+              "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
             },
             "typeName": {
               "id": 2171,
@@ -1355,14 +1355,14 @@
                 "src": "1392:10:11",
                 "typeDescriptions": {
                   "typeIdentifier": "t_enum$_Permission_$4662",
-                  "typeString": "enum IHyperbase.Permission"
+                  "typeString": "enum IHyperclaim.Permission"
                 }
               },
               "nodeType": "Mapping",
               "src": "1384:30:11",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
               },
               "valueType": {
                 "id": 2170,
@@ -1381,7 +1381,7 @@
             "id": 2192,
             "nodeType": "StructDefinition",
             "src": "1478:216:11",
-            "canonicalName": "Hyperbase.Transaction",
+            "canonicalName": "Hyperclaim.Transaction",
             "members": [
               {
                 "constant": false,
@@ -1396,7 +1396,7 @@
                 "storageLocation": "default",
                 "typeDescriptions": {
                   "typeIdentifier": "t_enum$_Permission_$4662",
-                  "typeString": "enum IHyperbase.Permission"
+                  "typeString": "enum IHyperclaim.Permission"
                 },
                 "typeName": {
                   "id": 2174,
@@ -1412,7 +1412,7 @@
                   "src": "1508:10:11",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Permission_$4662",
-                    "typeString": "enum IHyperbase.Permission"
+                    "typeString": "enum IHyperclaim.Permission"
                   }
                 },
                 "visibility": "internal"
@@ -1593,7 +1593,7 @@
                 "storageLocation": "default",
                 "typeDescriptions": {
                   "typeIdentifier": "t_enum$_Status_$4668",
-                  "typeString": "enum IHyperbase.Status"
+                  "typeString": "enum IHyperclaim.Status"
                 },
                 "typeName": {
                   "id": 2190,
@@ -1609,7 +1609,7 @@
                   "src": "1673:6:11",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Status_$4668",
-                    "typeString": "enum IHyperbase.Status"
+                    "typeString": "enum IHyperclaim.Status"
                   }
                 },
                 "visibility": "internal"
@@ -1633,7 +1633,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-              "typeString": "struct Hyperbase.Transaction[]"
+              "typeString": "struct Hyperclaim.Transaction[]"
             },
             "typeName": {
               "baseType": {
@@ -1650,7 +1650,7 @@
                 "src": "1728:11:11",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_Transaction_$2192_storage_ptr",
-                  "typeString": "struct Hyperbase.Transaction"
+                  "typeString": "struct Hyperclaim.Transaction"
                 }
               },
               "id": 2195,
@@ -1658,7 +1658,7 @@
               "src": "1728:13:11",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage_ptr",
-                "typeString": "struct Hyperbase.Transaction[]"
+                "typeString": "struct Hyperclaim.Transaction[]"
               }
             },
             "visibility": "private"
@@ -1788,7 +1788,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_mapping$_t_enum$_Status_$4668_$_t_array$_t_uint256_$dyn_storage_$",
-              "typeString": "mapping(enum IHyperbase.Status => uint256[])"
+              "typeString": "mapping(enum IHyperclaim.Status => uint256[])"
             },
             "typeName": {
               "id": 2211,
@@ -1806,14 +1806,14 @@
                 "src": "2082:6:11",
                 "typeDescriptions": {
                   "typeIdentifier": "t_enum$_Status_$4668",
-                  "typeString": "enum IHyperbase.Status"
+                  "typeString": "enum IHyperclaim.Status"
                 }
               },
               "nodeType": "Mapping",
               "src": "2074:28:11",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_enum$_Status_$4668_$_t_array$_t_uint256_$dyn_storage_$",
-                "typeString": "mapping(enum IHyperbase.Status => uint256[])"
+                "typeString": "mapping(enum IHyperclaim.Status => uint256[])"
               },
               "valueType": {
                 "baseType": {
@@ -1864,7 +1864,7 @@
                       "storageLocation": "memory",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                        "typeString": "struct Hyperbase.Key"
+                        "typeString": "struct Hyperclaim.Key"
                       },
                       "typeName": {
                         "id": 2221,
@@ -1880,7 +1880,7 @@
                         "src": "2300:3:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Key_$2154_storage_ptr",
-                          "typeString": "struct Hyperbase.Key"
+                          "typeString": "struct Hyperclaim.Key"
                         }
                       },
                       "visibility": "internal"
@@ -1931,7 +1931,7 @@
                           "src": "2363:10:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                            "typeString": "type(enum IHyperbase.Permission)"
+                            "typeString": "type(enum IHyperclaim.Permission)"
                           }
                         },
                         "id": 2227,
@@ -1945,7 +1945,7 @@
                         "src": "2363:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       {
@@ -1973,7 +1973,7 @@
                         },
                         {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         },
                         {
                           "typeIdentifier": "t_bool",
@@ -1988,7 +1988,7 @@
                       "src": "2318:3:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_struct$_Key_$2154_storage_ptr_$",
-                        "typeString": "type(struct Hyperbase.Key storage pointer)"
+                        "typeString": "type(struct Hyperclaim.Key storage pointer)"
                       }
                     },
                     "id": 2229,
@@ -2003,7 +2003,7 @@
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                      "typeString": "struct Hyperbase.Key memory"
+                      "typeString": "struct Hyperclaim.Key memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -2021,7 +2021,7 @@
                         "src": "2476:3:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                          "typeString": "struct Hyperbase.Key memory"
+                          "typeString": "struct Hyperclaim.Key memory"
                         }
                       }
                     ],
@@ -2029,7 +2029,7 @@
                       "argumentTypes": [
                         {
                           "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                          "typeString": "struct Hyperbase.Key memory"
+                          "typeString": "struct Hyperclaim.Key memory"
                         }
                       ],
                       "expression": {
@@ -2041,7 +2041,7 @@
                         "src": "2465:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 2233,
@@ -2054,7 +2054,7 @@
                       "src": "2465:10:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Key_$2154_storage_$dyn_storage_ptr_$_t_struct$_Key_$2154_storage_$returns$__$bound_to$_t_array$_t_struct$_Key_$2154_storage_$dyn_storage_ptr_$",
-                        "typeString": "function (struct Hyperbase.Key storage ref[] storage pointer,struct Hyperbase.Key storage ref)"
+                        "typeString": "function (struct Hyperclaim.Key storage ref[] storage pointer,struct Hyperclaim.Key storage ref)"
                       }
                     },
                     "id": 2235,
@@ -2152,7 +2152,7 @@
                         "src": "2524:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 2242,
@@ -2195,7 +2195,7 @@
                         "src": "2606:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                          "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                          "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
                         }
                       },
                       "id": 2248,
@@ -2209,7 +2209,7 @@
                           "src": "2628:10:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                            "typeString": "type(enum IHyperbase.Permission)"
+                            "typeString": "type(enum IHyperclaim.Permission)"
                           }
                         },
                         "id": 2247,
@@ -2223,7 +2223,7 @@
                         "src": "2628:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "isConstant": false,
@@ -2282,7 +2282,7 @@
                         "src": "2665:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                          "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                          "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
                         }
                       },
                       "id": 2255,
@@ -2296,7 +2296,7 @@
                           "src": "2687:10:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                            "typeString": "type(enum IHyperbase.Permission)"
+                            "typeString": "type(enum IHyperclaim.Permission)"
                           }
                         },
                         "id": 2254,
@@ -2310,7 +2310,7 @@
                         "src": "2687:17:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "isConstant": false,
@@ -2369,7 +2369,7 @@
                         "src": "2720:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                          "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                          "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
                         }
                       },
                       "id": 2262,
@@ -2383,7 +2383,7 @@
                           "src": "2742:10:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                            "typeString": "type(enum IHyperbase.Permission)"
+                            "typeString": "type(enum IHyperclaim.Permission)"
                           }
                         },
                         "id": 2261,
@@ -2397,7 +2397,7 @@
                         "src": "2742:16:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "isConstant": false,
@@ -2586,16 +2586,16 @@
                               "referencedDeclaration": -28,
                               "src": "2903:4:11",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Hyperbase_$3825",
-                                "typeString": "contract Hyperbase"
+                                "typeIdentifier": "t_contract$_Hyperclaim_$3825",
+                                "typeString": "contract Hyperclaim"
                               }
                             }
                           ],
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_Hyperbase_$3825",
-                                "typeString": "contract Hyperbase"
+                                "typeIdentifier": "t_contract$_Hyperclaim_$3825",
+                                "typeString": "contract Hyperclaim"
                               }
                             ],
                             "id": 2273,
@@ -2731,7 +2731,7 @@
                                 "src": "2988:10:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                  "typeString": "type(enum IHyperbase.Permission)"
+                                  "typeString": "type(enum IHyperclaim.Permission)"
                                 }
                               },
                               "id": 2287,
@@ -2745,7 +2745,7 @@
                               "src": "2988:21:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -2753,7 +2753,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2285,
@@ -2805,7 +2805,7 @@
                                   "src": "3020:5:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                    "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                    "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                   }
                                 },
                                 "id": 2296,
@@ -2874,7 +2874,7 @@
                                 "src": "3020:35:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Key_$2154_storage",
-                                  "typeString": "struct Hyperbase.Key storage ref"
+                                  "typeString": "struct Hyperclaim.Key storage ref"
                                 }
                               },
                               "id": 2297,
@@ -2888,7 +2888,7 @@
                               "src": "3020:46:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -2896,7 +2896,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2290,
@@ -3032,7 +3032,7 @@
                                 "src": "3143:10:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                  "typeString": "type(enum IHyperbase.Permission)"
+                                  "typeString": "type(enum IHyperclaim.Permission)"
                                 }
                               },
                               "id": 2310,
@@ -3046,7 +3046,7 @@
                               "src": "3143:17:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -3054,7 +3054,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2308,
@@ -3106,7 +3106,7 @@
                                   "src": "3171:5:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                    "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                    "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                   }
                                 },
                                 "id": 2319,
@@ -3175,7 +3175,7 @@
                                 "src": "3171:35:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Key_$2154_storage",
-                                  "typeString": "struct Hyperbase.Key storage ref"
+                                  "typeString": "struct Hyperclaim.Key storage ref"
                                 }
                               },
                               "id": 2320,
@@ -3189,7 +3189,7 @@
                               "src": "3171:46:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -3197,7 +3197,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2313,
@@ -3333,7 +3333,7 @@
                                 "src": "3294:10:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                  "typeString": "type(enum IHyperbase.Permission)"
+                                  "typeString": "type(enum IHyperclaim.Permission)"
                                 }
                               },
                               "id": 2333,
@@ -3347,7 +3347,7 @@
                               "src": "3294:16:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -3355,7 +3355,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2331,
@@ -3407,7 +3407,7 @@
                                   "src": "3321:5:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                    "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                    "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                   }
                                 },
                                 "id": 2342,
@@ -3476,7 +3476,7 @@
                                 "src": "3321:35:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Key_$2154_storage",
-                                  "typeString": "struct Hyperbase.Key storage ref"
+                                  "typeString": "struct Hyperclaim.Key storage ref"
                                 }
                               },
                               "id": 2343,
@@ -3490,7 +3490,7 @@
                               "src": "3321:46:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -3498,7 +3498,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2336,
@@ -3633,7 +3633,7 @@
                               "src": "3462:5:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                               }
                             },
                             "id": 2359,
@@ -3682,7 +3682,7 @@
                             "src": "3462:26:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Key_$2154_storage",
-                              "typeString": "struct Hyperbase.Key storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref"
                             }
                           },
                           "id": 2360,
@@ -3815,7 +3815,7 @@
                             "src": "3582:5:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                             }
                           },
                           "id": 2375,
@@ -3864,7 +3864,7 @@
                           "src": "3582:26:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Key_$2154_storage",
-                            "typeString": "struct Hyperbase.Key storage ref"
+                            "typeString": "struct Hyperclaim.Key storage ref"
                           }
                         },
                         "id": 2376,
@@ -4004,7 +4004,7 @@
                                   "src": "3721:13:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                    "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                    "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                   }
                                 },
                                 "id": 2392,
@@ -4053,7 +4053,7 @@
                                 "src": "3721:42:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref"
                                 }
                               },
                               "id": 2393,
@@ -4067,7 +4067,7 @@
                               "src": "3721:51:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -4075,7 +4075,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2387,
@@ -4681,7 +4681,7 @@
                       {
                         "commonType": {
                           "typeIdentifier": "t_enum$_Status_$4668",
-                          "typeString": "enum IHyperbase.Status"
+                          "typeString": "enum IHyperclaim.Status"
                         },
                         "id": 2451,
                         "isConstant": false,
@@ -4699,7 +4699,7 @@
                               "src": "4201:13:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                               }
                             },
                             "id": 2447,
@@ -4748,7 +4748,7 @@
                             "src": "4201:42:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                              "typeString": "struct Hyperbase.Transaction storage ref"
+                              "typeString": "struct Hyperclaim.Transaction storage ref"
                             }
                           },
                           "id": 2448,
@@ -4762,7 +4762,7 @@
                           "src": "4201:49:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           }
                         },
                         "nodeType": "BinaryOperation",
@@ -4777,7 +4777,7 @@
                             "src": "4254:6:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                              "typeString": "type(enum IHyperbase.Status)"
+                              "typeString": "type(enum IHyperclaim.Status)"
                             }
                           },
                           "id": 2450,
@@ -4791,7 +4791,7 @@
                           "src": "4254:15:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           }
                         },
                         "src": "4201:68:11",
@@ -5112,7 +5112,7 @@
                                   "src": "4592:5:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                    "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                    "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                   }
                                 },
                                 "id": 2491,
@@ -5161,7 +5161,7 @@
                                 "src": "4592:26:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_struct$_Key_$2154_storage",
-                                  "typeString": "struct Hyperbase.Key storage ref"
+                                  "typeString": "struct Hyperclaim.Key storage ref"
                                 }
                               },
                               "id": 2492,
@@ -5175,7 +5175,7 @@
                               "src": "4592:37:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -5183,7 +5183,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2486,
@@ -5286,7 +5286,7 @@
                                 "src": "4639:21:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_view$_t_array$_t_address_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_bytes_memory_ptr_$dyn_memory_ptr_$returns$_t_enum$_Permission_$4662_$",
-                                  "typeString": "function (address[] memory,uint256[] memory,bytes memory[] memory) view returns (enum IHyperbase.Permission)"
+                                  "typeString": "function (address[] memory,uint256[] memory,bytes memory[] memory) view returns (enum IHyperclaim.Permission)"
                                 }
                               },
                               "id": 2500,
@@ -5301,7 +5301,7 @@
                               "tryCall": false,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             }
                           ],
@@ -5309,7 +5309,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             ],
                             "id": 2495,
@@ -5932,7 +5932,7 @@
                       "storageLocation": "memory",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                        "typeString": "struct Hyperbase.Key"
+                        "typeString": "struct Hyperclaim.Key"
                       },
                       "typeName": {
                         "id": 2550,
@@ -5948,7 +5948,7 @@
                         "src": "5456:3:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Key_$2154_storage_ptr",
-                          "typeString": "struct Hyperbase.Key"
+                          "typeString": "struct Hyperclaim.Key"
                         }
                       },
                       "visibility": "internal"
@@ -5978,7 +5978,7 @@
                         "src": "5513:10:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       {
@@ -6006,7 +6006,7 @@
                         },
                         {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         },
                         {
                           "typeIdentifier": "t_bool",
@@ -6021,7 +6021,7 @@
                       "src": "5477:3:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_struct$_Key_$2154_storage_ptr_$",
-                        "typeString": "type(struct Hyperbase.Key storage pointer)"
+                        "typeString": "type(struct Hyperclaim.Key storage pointer)"
                       }
                     },
                     "id": 2556,
@@ -6036,7 +6036,7 @@
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                      "typeString": "struct Hyperbase.Key memory"
+                      "typeString": "struct Hyperclaim.Key memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -6054,7 +6054,7 @@
                         "src": "5615:6:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                          "typeString": "struct Hyperbase.Key memory"
+                          "typeString": "struct Hyperclaim.Key memory"
                         }
                       }
                     ],
@@ -6062,7 +6062,7 @@
                       "argumentTypes": [
                         {
                           "typeIdentifier": "t_struct$_Key_$2154_memory_ptr",
-                          "typeString": "struct Hyperbase.Key memory"
+                          "typeString": "struct Hyperclaim.Key memory"
                         }
                       ],
                       "expression": {
@@ -6074,7 +6074,7 @@
                         "src": "5604:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 2560,
@@ -6087,7 +6087,7 @@
                       "src": "5604:10:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Key_$2154_storage_$dyn_storage_ptr_$_t_struct$_Key_$2154_storage_$returns$__$bound_to$_t_array$_t_struct$_Key_$2154_storage_$dyn_storage_ptr_$",
-                        "typeString": "function (struct Hyperbase.Key storage ref[] storage pointer,struct Hyperbase.Key storage ref)"
+                        "typeString": "function (struct Hyperclaim.Key storage ref[] storage pointer,struct Hyperclaim.Key storage ref)"
                       }
                     },
                     "id": 2562,
@@ -6135,7 +6135,7 @@
                             "src": "5668:10:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           }
                         ],
@@ -6143,7 +6143,7 @@
                           "argumentTypes": [
                             {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           ],
                           "id": 2567,
@@ -6343,7 +6343,7 @@
                   "storageLocation": "default",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Permission_$4662",
-                    "typeString": "enum IHyperbase.Permission"
+                    "typeString": "enum IHyperclaim.Permission"
                   },
                   "typeName": {
                     "id": 2537,
@@ -6359,7 +6359,7 @@
                     "src": "5246:10:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "visibility": "internal"
@@ -6440,7 +6440,7 @@
                                   "src": "5917:5:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                    "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                    "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                   }
                                 },
                                 "id": 2586,
@@ -6512,9 +6512,9 @@
                         "src": "5936:34:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_98eb9bf5924531a3c7c59a0ccb0b5cc597002cc7df170095c54428cce4498aff",
-                          "typeString": "literal_string \"Hyperbase: Cannot have zero keys\""
+                          "typeString": "literal_string \"Hyperclaim: Cannot have zero keys\""
                         },
-                        "value": "Hyperbase: Cannot have zero keys"
+                        "value": "Hyperclaim: Cannot have zero keys"
                       }
                     ],
                     "expression": {
@@ -6525,7 +6525,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_98eb9bf5924531a3c7c59a0ccb0b5cc597002cc7df170095c54428cce4498aff",
-                          "typeString": "literal_string \"Hyperbase: Cannot have zero keys\""
+                          "typeString": "literal_string \"Hyperclaim: Cannot have zero keys\""
                         }
                       ],
                       "id": 2583,
@@ -6579,7 +6579,7 @@
                       "storageLocation": "default",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Permission_$4662",
-                        "typeString": "enum IHyperbase.Permission"
+                        "typeString": "enum IHyperclaim.Permission"
                       },
                       "typeName": {
                         "id": 2595,
@@ -6595,7 +6595,7 @@
                         "src": "5984:10:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "visibility": "internal"
@@ -6613,7 +6613,7 @@
                         "src": "6008:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 2601,
@@ -6662,7 +6662,7 @@
                       "src": "6008:26:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Key_$2154_storage",
-                        "typeString": "struct Hyperbase.Key storage ref"
+                        "typeString": "struct Hyperclaim.Key storage ref"
                       }
                     },
                     "id": 2602,
@@ -6676,7 +6676,7 @@
                     "src": "6008:37:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -6703,7 +6703,7 @@
                         "src": "6092:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 2605,
@@ -6731,7 +6731,7 @@
                         "src": "6107:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                          "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                          "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
                         }
                       },
                       "id": 2608,
@@ -6744,7 +6744,7 @@
                         "src": "6129:10:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "isConstant": false,
@@ -6792,7 +6792,7 @@
                                   "src": "6176:5:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                    "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                    "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                   }
                                 },
                                 "id": 2614,
@@ -6883,7 +6883,7 @@
                           "src": "6195:10:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Permission_$4662",
-                            "typeString": "enum IHyperbase.Permission"
+                            "typeString": "enum IHyperclaim.Permission"
                           }
                         }
                       ],
@@ -6895,7 +6895,7 @@
                           },
                           {
                             "typeIdentifier": "t_enum$_Permission_$4662",
-                            "typeString": "enum IHyperbase.Permission"
+                            "typeString": "enum IHyperclaim.Permission"
                           }
                         ],
                         "id": 2610,
@@ -6906,7 +6906,7 @@
                         "src": "6155:14:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_nonpayable$_t_uint8_$_t_enum$_Permission_$4662_$returns$__$",
-                          "typeString": "function (uint8,enum IHyperbase.Permission)"
+                          "typeString": "function (uint8,enum IHyperclaim.Permission)"
                         }
                       },
                       "id": 2619,
@@ -6950,7 +6950,7 @@
                         "src": "6253:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 2626,
@@ -6999,7 +6999,7 @@
                       "src": "6253:26:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Key_$2154_storage",
-                        "typeString": "struct Hyperbase.Key storage ref"
+                        "typeString": "struct Hyperclaim.Key storage ref"
                       }
                     },
                     "typeDescriptions": {
@@ -7037,7 +7037,7 @@
                             "src": "6337:10:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           }
                         ],
@@ -7045,7 +7045,7 @@
                           "argumentTypes": [
                             {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           ],
                           "id": 2632,
@@ -7254,7 +7254,7 @@
                             "src": "6638:5:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                             }
                           },
                           "id": 2659,
@@ -7303,7 +7303,7 @@
                           "src": "6638:26:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Key_$2154_storage",
-                            "typeString": "struct Hyperbase.Key storage ref"
+                            "typeString": "struct Hyperclaim.Key storage ref"
                           }
                         },
                         "id": 2660,
@@ -7317,7 +7317,7 @@
                         "src": "6638:37:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       }
                     ],
@@ -7329,7 +7329,7 @@
                         },
                         {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       ],
                       "id": 2653,
@@ -7340,7 +7340,7 @@
                       "src": "6623:6:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_enum$_Permission_$4662_$returns$__$",
-                        "typeString": "function (address,enum IHyperbase.Permission)"
+                        "typeString": "function (address,enum IHyperclaim.Permission)"
                       }
                     },
                     "id": 2661,
@@ -7649,9 +7649,9 @@
                         "src": "7225:30:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_869b94643f8c91bab864a3688dca8b1ec740d14a3044f2718c6bbb0a3083e8ad",
-                          "typeString": "literal_string \"Hyperbase: empty transaction\""
+                          "typeString": "literal_string \"Hyperclaim: empty transaction\""
                         },
-                        "value": "Hyperbase: empty transaction"
+                        "value": "Hyperclaim: empty transaction"
                       }
                     ],
                     "expression": {
@@ -7662,7 +7662,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_869b94643f8c91bab864a3688dca8b1ec740d14a3044f2718c6bbb0a3083e8ad",
-                          "typeString": "literal_string \"Hyperbase: empty transaction\""
+                          "typeString": "literal_string \"Hyperclaim: empty transaction\""
                         }
                       ],
                       "id": 2689,
@@ -7871,9 +7871,9 @@
                         "src": "7345:39:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_c09c61f67e1a3ea97a7bdd899acfb213fb782ccf52ae2421a0ee5230221d6c3a",
-                          "typeString": "literal_string \"Hyperbase: invalid transaction length\""
+                          "typeString": "literal_string \"Hyperclaim: invalid transaction length\""
                         },
-                        "value": "Hyperbase: invalid transaction length"
+                        "value": "Hyperclaim: invalid transaction length"
                       }
                     ],
                     "expression": {
@@ -7884,7 +7884,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_c09c61f67e1a3ea97a7bdd899acfb213fb782ccf52ae2421a0ee5230221d6c3a",
-                          "typeString": "literal_string \"Hyperbase: invalid transaction length\""
+                          "typeString": "literal_string \"Hyperclaim: invalid transaction length\""
                         }
                       ],
                       "id": 2697,
@@ -8055,7 +8055,7 @@
                       "storageLocation": "default",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Permission_$4662",
-                        "typeString": "enum IHyperbase.Permission"
+                        "typeString": "enum IHyperclaim.Permission"
                       },
                       "typeName": {
                         "id": 2721,
@@ -8071,7 +8071,7 @@
                         "src": "7498:10:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "visibility": "internal"
@@ -8140,7 +8140,7 @@
                       "src": "7522:21:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_array$_t_address_$dyn_memory_ptr_$_t_array$_t_uint256_$dyn_memory_ptr_$_t_array$_t_bytes_memory_ptr_$dyn_memory_ptr_$returns$_t_enum$_Permission_$4662_$",
-                        "typeString": "function (address[] memory,uint256[] memory,bytes memory[] memory) view returns (enum IHyperbase.Permission)"
+                        "typeString": "function (address[] memory,uint256[] memory,bytes memory[] memory) view returns (enum IHyperclaim.Permission)"
                       }
                     },
                     "id": 2727,
@@ -8155,7 +8155,7 @@
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -8482,7 +8482,7 @@
                             "storageLocation": "memory",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Transaction_$2192_memory_ptr",
-                              "typeString": "struct Hyperbase.Transaction"
+                              "typeString": "struct Hyperclaim.Transaction"
                             },
                             "typeName": {
                               "id": 2816,
@@ -8498,7 +8498,7 @@
                               "src": "8537:11:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage_ptr",
-                                "typeString": "struct Hyperbase.Transaction"
+                                "typeString": "struct Hyperclaim.Transaction"
                               }
                             },
                             "visibility": "internal"
@@ -8516,7 +8516,7 @@
                               "src": "8604:10:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             },
                             {
@@ -8589,7 +8589,7 @@
                                 "src": "8766:6:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                  "typeString": "type(enum IHyperbase.Status)"
+                                  "typeString": "type(enum IHyperclaim.Status)"
                                 }
                               },
                               "id": 2826,
@@ -8603,7 +8603,7 @@
                               "src": "8766:14:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Status_$4668",
-                                "typeString": "enum IHyperbase.Status"
+                                "typeString": "enum IHyperclaim.Status"
                               }
                             }
                           ],
@@ -8611,7 +8611,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               },
                               {
                                 "typeIdentifier": "t_uint64",
@@ -8635,7 +8635,7 @@
                               },
                               {
                                 "typeIdentifier": "t_enum$_Status_$4668",
-                                "typeString": "enum IHyperbase.Status"
+                                "typeString": "enum IHyperclaim.Status"
                               }
                             ],
                             "id": 2818,
@@ -8646,7 +8646,7 @@
                             "src": "8574:11:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_struct$_Transaction_$2192_storage_ptr_$",
-                              "typeString": "type(struct Hyperbase.Transaction storage pointer)"
+                              "typeString": "type(struct Hyperclaim.Transaction storage pointer)"
                             }
                           },
                           "id": 2827,
@@ -8661,7 +8661,7 @@
                           "tryCall": false,
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Transaction_$2192_memory_ptr",
-                            "typeString": "struct Hyperbase.Transaction memory"
+                            "typeString": "struct Hyperclaim.Transaction memory"
                           }
                         },
                         "nodeType": "VariableDeclarationStatement",
@@ -8679,7 +8679,7 @@
                               "src": "8873:14:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_memory_ptr",
-                                "typeString": "struct Hyperbase.Transaction memory"
+                                "typeString": "struct Hyperclaim.Transaction memory"
                               }
                             }
                           ],
@@ -8687,7 +8687,7 @@
                             "argumentTypes": [
                               {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_memory_ptr",
-                                "typeString": "struct Hyperbase.Transaction memory"
+                                "typeString": "struct Hyperclaim.Transaction memory"
                               }
                             ],
                             "expression": {
@@ -8699,7 +8699,7 @@
                               "src": "8854:13:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                               }
                             },
                             "id": 2831,
@@ -8712,7 +8712,7 @@
                             "src": "8854:18:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage_ptr_$_t_struct$_Transaction_$2192_storage_$returns$__$bound_to$_t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage_ptr_$",
-                              "typeString": "function (struct Hyperbase.Transaction storage ref[] storage pointer,struct Hyperbase.Transaction storage ref)"
+                              "typeString": "function (struct Hyperclaim.Transaction storage ref[] storage pointer,struct Hyperclaim.Transaction storage ref)"
                             }
                           },
                           "id": 2833,
@@ -8790,7 +8790,7 @@
                               "src": "8972:13:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                               }
                             },
                             "id": 2839,
@@ -8844,7 +8844,7 @@
                                 "src": "7903:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 2754,
@@ -8893,7 +8893,7 @@
                               "src": "7903:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 2755,
@@ -8907,7 +8907,7 @@
                             "src": "7903:51:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           },
                           "nodeType": "Assignment",
@@ -8921,13 +8921,13 @@
                             "src": "7957:10:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           },
                           "src": "7903:64:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Permission_$4662",
-                            "typeString": "enum IHyperbase.Permission"
+                            "typeString": "enum IHyperclaim.Permission"
                           }
                         },
                         "id": 2758,
@@ -8952,7 +8952,7 @@
                                 "src": "7982:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 2763,
@@ -9001,7 +9001,7 @@
                               "src": "7982:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 2764,
@@ -9060,7 +9060,7 @@
                                 "src": "8061:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 2772,
@@ -9109,7 +9109,7 @@
                               "src": "8061:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 2773,
@@ -9168,7 +9168,7 @@
                                 "src": "8138:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 2781,
@@ -9217,7 +9217,7 @@
                               "src": "8138:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 2782,
@@ -9276,7 +9276,7 @@
                                 "src": "8213:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 2790,
@@ -9325,7 +9325,7 @@
                               "src": "8213:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 2791,
@@ -9384,7 +9384,7 @@
                                 "src": "8286:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 2799,
@@ -9433,7 +9433,7 @@
                               "src": "8286:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 2800,
@@ -9492,7 +9492,7 @@
                                 "src": "8367:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 2808,
@@ -9541,7 +9541,7 @@
                               "src": "8367:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 2809,
@@ -9555,7 +9555,7 @@
                             "src": "8367:49:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "nodeType": "Assignment",
@@ -9570,7 +9570,7 @@
                               "src": "8419:6:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                "typeString": "type(enum IHyperbase.Status)"
+                                "typeString": "type(enum IHyperclaim.Status)"
                               }
                             },
                             "id": 2811,
@@ -9584,13 +9584,13 @@
                             "src": "8419:14:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "src": "8367:66:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           }
                         },
                         "id": 2813,
@@ -9658,7 +9658,7 @@
                           "src": "9051:21:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_enum$_Status_$4668_$_t_array$_t_uint256_$dyn_storage_$",
-                            "typeString": "mapping(enum IHyperbase.Status => uint256[] storage ref)"
+                            "typeString": "mapping(enum IHyperclaim.Status => uint256[] storage ref)"
                           }
                         },
                         "id": 2847,
@@ -9672,7 +9672,7 @@
                             "src": "9073:6:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                              "typeString": "type(enum IHyperbase.Status)"
+                              "typeString": "type(enum IHyperclaim.Status)"
                             }
                           },
                           "id": 2846,
@@ -9686,7 +9686,7 @@
                           "src": "9073:14:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           }
                         },
                         "isConstant": false,
@@ -9764,7 +9764,7 @@
                             "src": "9204:13:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                             }
                           },
                           "id": 2856,
@@ -10060,7 +10060,7 @@
                       "src": "9442:13:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                        "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                        "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                       }
                     },
                     "id": 2878,
@@ -10594,7 +10594,7 @@
                             "src": "10281:13:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                             }
                           },
                           "id": 2945,
@@ -10618,7 +10618,7 @@
                           "src": "10281:21:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref"
                           }
                         },
                         "id": 2946,
@@ -10646,7 +10646,7 @@
                             "src": "10312:13:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                             }
                           },
                           "id": 2949,
@@ -10670,7 +10670,7 @@
                           "src": "10312:21:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref"
                           }
                         },
                         "id": 2950,
@@ -10698,7 +10698,7 @@
                             "src": "10342:13:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                             }
                           },
                           "id": 2953,
@@ -10722,7 +10722,7 @@
                           "src": "10342:21:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref"
                           }
                         },
                         "id": 2954,
@@ -10884,7 +10884,7 @@
                         "src": "9765:13:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                         }
                       },
                       "id": 2898,
@@ -10933,7 +10933,7 @@
                       "src": "9765:42:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                        "typeString": "struct Hyperbase.Transaction storage ref"
+                        "typeString": "struct Hyperclaim.Transaction storage ref"
                       }
                     },
                     "id": 2899,
@@ -10961,7 +10961,7 @@
                         "src": "9817:13:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                         }
                       },
                       "id": 2904,
@@ -11010,7 +11010,7 @@
                       "src": "9817:42:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                        "typeString": "struct Hyperbase.Transaction storage ref"
+                        "typeString": "struct Hyperclaim.Transaction storage ref"
                       }
                     },
                     "id": 2905,
@@ -11038,7 +11038,7 @@
                         "src": "9868:13:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                         }
                       },
                       "id": 2910,
@@ -11087,7 +11087,7 @@
                       "src": "9868:42:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                        "typeString": "struct Hyperbase.Transaction storage ref"
+                        "typeString": "struct Hyperclaim.Transaction storage ref"
                       }
                     },
                     "id": 2911,
@@ -11880,7 +11880,7 @@
                         "src": "11393:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                          "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                          "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
                         }
                       },
                       "id": 3042,
@@ -11895,7 +11895,7 @@
                             "src": "11415:13:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                             }
                           },
                           "id": 3040,
@@ -11944,7 +11944,7 @@
                           "src": "11415:42:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref"
                           }
                         },
                         "id": 3041,
@@ -11958,7 +11958,7 @@
                         "src": "11415:51:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "isConstant": false,
@@ -12159,7 +12159,7 @@
                             {
                               "commonType": {
                                 "typeIdentifier": "t_enum$_Status_$4668",
-                                "typeString": "enum IHyperbase.Status"
+                                "typeString": "enum IHyperclaim.Status"
                               },
                               "id": 3064,
                               "isConstant": false,
@@ -12177,7 +12177,7 @@
                                     "src": "11697:13:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                      "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                      "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                     }
                                   },
                                   "id": 3060,
@@ -12226,7 +12226,7 @@
                                   "src": "11697:42:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                    "typeString": "struct Hyperbase.Transaction storage ref"
+                                    "typeString": "struct Hyperclaim.Transaction storage ref"
                                   }
                                 },
                                 "id": 3061,
@@ -12240,7 +12240,7 @@
                                 "src": "11697:49:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_enum$_Status_$4668",
-                                  "typeString": "enum IHyperbase.Status"
+                                  "typeString": "enum IHyperclaim.Status"
                                 }
                               },
                               "nodeType": "BinaryOperation",
@@ -12255,7 +12255,7 @@
                                   "src": "11750:6:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                    "typeString": "type(enum IHyperbase.Status)"
+                                    "typeString": "type(enum IHyperclaim.Status)"
                                   }
                                 },
                                 "id": 3063,
@@ -12269,7 +12269,7 @@
                                 "src": "11750:14:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_enum$_Status_$4668",
-                                  "typeString": "enum IHyperbase.Status"
+                                  "typeString": "enum IHyperclaim.Status"
                                 }
                               },
                               "src": "11697:67:11",
@@ -12290,9 +12290,9 @@
                               "src": "11766:29:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_stringliteral_49401971e1329482d8f5c0fc29a3725060ba018de4449060a1ad18ae59911e5f",
-                                "typeString": "literal_string \"Hyperbase: can only execute\""
+                                "typeString": "literal_string \"Hyperclaim: can only execute\""
                               },
-                              "value": "Hyperbase: can only execute"
+                              "value": "Hyperclaim: can only execute"
                             }
                           ],
                           "expression": {
@@ -12303,7 +12303,7 @@
                               },
                               {
                                 "typeIdentifier": "t_stringliteral_49401971e1329482d8f5c0fc29a3725060ba018de4449060a1ad18ae59911e5f",
-                                "typeString": "literal_string \"Hyperbase: can only execute\""
+                                "typeString": "literal_string \"Hyperclaim: can only execute\""
                               }
                             ],
                             "id": 3055,
@@ -12458,7 +12458,7 @@
                                 "src": "11967:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 3079,
@@ -12507,7 +12507,7 @@
                               "src": "11967:42:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 3080,
@@ -12521,7 +12521,7 @@
                             "src": "11967:49:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "nodeType": "Assignment",
@@ -12536,7 +12536,7 @@
                               "src": "12019:6:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                "typeString": "type(enum IHyperbase.Status)"
+                                "typeString": "type(enum IHyperclaim.Status)"
                               }
                             },
                             "id": 3082,
@@ -12550,13 +12550,13 @@
                             "src": "12019:15:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "src": "11967:67:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           }
                         },
                         "id": 3084,
@@ -13173,9 +13173,9 @@
                     "src": "12437:42:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_stringliteral_47e645faadb8fcb2180a58d952adce38d52ad76d14b28f508bd3ab6cb14c2ad4",
-                      "typeString": "literal_string \"Hyperbase: call reverted without message\""
+                      "typeString": "literal_string \"Hyperclaim: call reverted without message\""
                     },
-                    "value": "Hyperbase: call reverted without message"
+                    "value": "Hyperclaim: call reverted without message"
                   },
                   "nodeType": "VariableDeclarationStatement",
                   "src": "12408:71:11"
@@ -13976,7 +13976,7 @@
                       "storageLocation": "default",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Status_$4668",
-                        "typeString": "enum IHyperbase.Status"
+                        "typeString": "enum IHyperclaim.Status"
                       },
                       "typeName": {
                         "id": 3177,
@@ -13992,7 +13992,7 @@
                         "src": "13093:6:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Status_$4668",
-                          "typeString": "enum IHyperbase.Status"
+                          "typeString": "enum IHyperclaim.Status"
                         }
                       },
                       "visibility": "internal"
@@ -14010,7 +14010,7 @@
                         "src": "13109:13:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                         }
                       },
                       "id": 3183,
@@ -14059,7 +14059,7 @@
                       "src": "13109:42:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                        "typeString": "struct Hyperbase.Transaction storage ref"
+                        "typeString": "struct Hyperclaim.Transaction storage ref"
                       }
                     },
                     "id": 3184,
@@ -14073,7 +14073,7 @@
                     "src": "13109:49:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Status_$4668",
-                      "typeString": "enum IHyperbase.Status"
+                      "typeString": "enum IHyperclaim.Status"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -14095,7 +14095,7 @@
                         "leftExpression": {
                           "commonType": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           },
                           "id": 3190,
                           "isConstant": false,
@@ -14111,7 +14111,7 @@
                             "src": "13230:6:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "nodeType": "BinaryOperation",
@@ -14126,7 +14126,7 @@
                               "src": "13240:6:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                "typeString": "type(enum IHyperbase.Status)"
+                                "typeString": "type(enum IHyperclaim.Status)"
                               }
                             },
                             "id": 3189,
@@ -14140,7 +14140,7 @@
                             "src": "13240:16:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "src": "13230:26:11",
@@ -14154,7 +14154,7 @@
                         "rightExpression": {
                           "commonType": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           },
                           "id": 3194,
                           "isConstant": false,
@@ -14170,7 +14170,7 @@
                             "src": "13260:6:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "nodeType": "BinaryOperation",
@@ -14185,7 +14185,7 @@
                               "src": "13270:6:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                "typeString": "type(enum IHyperbase.Status)"
+                                "typeString": "type(enum IHyperclaim.Status)"
                               }
                             },
                             "id": 3193,
@@ -14199,7 +14199,7 @@
                             "src": "13270:15:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "src": "13260:25:11",
@@ -14226,9 +14226,9 @@
                         "src": "13287:35:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_60469aadd0c463a149256cdbc7f8930de34ef346d67c07e33183db2c059f1a4b",
-                          "typeString": "literal_string \"Hyperbase: transaction not active\""
+                          "typeString": "literal_string \"Hyperclaim: transaction not active\""
                         },
-                        "value": "Hyperbase: transaction not active"
+                        "value": "Hyperclaim: transaction not active"
                       }
                     ],
                     "expression": {
@@ -14239,7 +14239,7 @@
                         },
                         {
                           "typeIdentifier": "t_stringliteral_60469aadd0c463a149256cdbc7f8930de34ef346d67c07e33183db2c059f1a4b",
-                          "typeString": "literal_string \"Hyperbase: transaction not active\""
+                          "typeString": "literal_string \"Hyperclaim: transaction not active\""
                         }
                       ],
                       "id": 3186,
@@ -14293,7 +14293,7 @@
                           "src": "13378:13:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                           }
                         },
                         "id": 3203,
@@ -14342,7 +14342,7 @@
                         "src": "13378:42:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref"
                         }
                       },
                       "id": 3204,
@@ -14356,7 +14356,7 @@
                       "src": "13378:49:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Status_$4668",
-                        "typeString": "enum IHyperbase.Status"
+                        "typeString": "enum IHyperclaim.Status"
                       }
                     },
                     "nodeType": "Assignment",
@@ -14371,7 +14371,7 @@
                         "src": "13430:6:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                          "typeString": "type(enum IHyperbase.Status)"
+                          "typeString": "type(enum IHyperclaim.Status)"
                         }
                       },
                       "id": 3206,
@@ -14385,13 +14385,13 @@
                       "src": "13430:16:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Status_$4668",
-                        "typeString": "enum IHyperbase.Status"
+                        "typeString": "enum IHyperclaim.Status"
                       }
                     },
                     "src": "13378:68:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Status_$4668",
-                      "typeString": "enum IHyperbase.Status"
+                      "typeString": "enum IHyperclaim.Status"
                     }
                   },
                   "id": 3208,
@@ -14633,7 +14633,7 @@
                         "src": "13830:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                          "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                          "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
                         }
                       },
                       "id": 3228,
@@ -14648,7 +14648,7 @@
                             "src": "13852:13:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                             }
                           },
                           "id": 3226,
@@ -14697,7 +14697,7 @@
                           "src": "13852:42:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref"
                           }
                         },
                         "id": 3227,
@@ -14711,7 +14711,7 @@
                         "src": "13852:51:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "isConstant": false,
@@ -14957,7 +14957,7 @@
                               "src": "14234:5:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                               }
                             },
                             "id": 3255,
@@ -15006,7 +15006,7 @@
                             "src": "14234:26:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Key_$2154_storage",
-                              "typeString": "struct Hyperbase.Key storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref"
                             }
                           },
                           "id": 3256,
@@ -15020,7 +15020,7 @@
                           "src": "14234:37:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Permission_$4662",
-                            "typeString": "enum IHyperbase.Permission"
+                            "typeString": "enum IHyperclaim.Permission"
                           }
                         }
                       ],
@@ -15028,7 +15028,7 @@
                         "argumentTypes": [
                           {
                             "typeIdentifier": "t_enum$_Permission_$4662",
-                            "typeString": "enum IHyperbase.Permission"
+                            "typeString": "enum IHyperclaim.Permission"
                           }
                         ],
                         "id": 3250,
@@ -15411,7 +15411,7 @@
                             "src": "14926:5:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                             }
                           },
                           "id": 3297,
@@ -15460,7 +15460,7 @@
                           "src": "14926:26:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Key_$2154_storage",
-                            "typeString": "struct Hyperbase.Key storage ref"
+                            "typeString": "struct Hyperclaim.Key storage ref"
                           }
                         },
                         "id": 3298,
@@ -15488,7 +15488,7 @@
                             "src": "14958:5:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                             }
                           },
                           "id": 3303,
@@ -15537,7 +15537,7 @@
                           "src": "14958:26:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Key_$2154_storage",
-                            "typeString": "struct Hyperbase.Key storage ref"
+                            "typeString": "struct Hyperclaim.Key storage ref"
                           }
                         },
                         "id": 3304,
@@ -15551,7 +15551,7 @@
                         "src": "14958:37:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       {
@@ -15565,7 +15565,7 @@
                             "src": "14997:5:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                             }
                           },
                           "id": 3309,
@@ -15614,7 +15614,7 @@
                           "src": "14997:26:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Key_$2154_storage",
-                            "typeString": "struct Hyperbase.Key storage ref"
+                            "typeString": "struct Hyperclaim.Key storage ref"
                           }
                         },
                         "id": 3310,
@@ -15642,7 +15642,7 @@
                     "src": "14925:106:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$_t_address_$_t_enum$_Permission_$4662_$_t_bool_$",
-                      "typeString": "tuple(address,enum IHyperbase.Permission,bool)"
+                      "typeString": "tuple(address,enum IHyperclaim.Permission,bool)"
                     }
                   },
                   "functionReturnParameters": 3292,
@@ -15738,7 +15738,7 @@
                   "storageLocation": "default",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Permission_$4662",
-                    "typeString": "enum IHyperbase.Permission"
+                    "typeString": "enum IHyperclaim.Permission"
                   },
                   "typeName": {
                     "id": 3288,
@@ -15754,7 +15754,7 @@
                     "src": "14884:10:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "visibility": "internal"
@@ -15815,7 +15815,7 @@
                         "src": "15184:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 3326,
@@ -15864,7 +15864,7 @@
                       "src": "15184:26:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Key_$2154_storage",
-                        "typeString": "struct Hyperbase.Key storage ref"
+                        "typeString": "struct Hyperclaim.Key storage ref"
                       }
                     },
                     "id": 3327,
@@ -15878,7 +15878,7 @@
                     "src": "15184:37:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "functionReturnParameters": 3321,
@@ -15946,7 +15946,7 @@
                   "storageLocation": "default",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Permission_$4662",
-                    "typeString": "enum IHyperbase.Permission"
+                    "typeString": "enum IHyperclaim.Permission"
                   },
                   "typeName": {
                     "id": 3319,
@@ -15962,7 +15962,7 @@
                     "src": "15149:10:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "visibility": "internal"
@@ -16245,16 +16245,16 @@
                                 "referencedDeclaration": -28,
                                 "src": "15859:4:11",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_Hyperbase_$3825",
-                                  "typeString": "contract Hyperbase"
+                                  "typeIdentifier": "t_contract$_Hyperclaim_$3825",
+                                  "typeString": "contract Hyperclaim"
                                 }
                               }
                             ],
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_Hyperbase_$3825",
-                                  "typeString": "contract Hyperbase"
+                                  "typeIdentifier": "t_contract$_Hyperclaim_$3825",
+                                  "typeString": "contract Hyperclaim"
                                 }
                               ],
                               "id": 3377,
@@ -16337,7 +16337,7 @@
                                     "src": "15902:10:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                      "typeString": "type(enum IHyperbase.Permission)"
+                                      "typeString": "type(enum IHyperclaim.Permission)"
                                     }
                                   },
                                   "id": 3385,
@@ -16351,7 +16351,7 @@
                                   "src": "15902:21:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_enum$_Permission_$4662",
-                                    "typeString": "enum IHyperbase.Permission"
+                                    "typeString": "enum IHyperclaim.Permission"
                                   }
                                 }
                               ],
@@ -16359,7 +16359,7 @@
                                 "argumentTypes": [
                                   {
                                     "typeIdentifier": "t_enum$_Permission_$4662",
-                                    "typeString": "enum IHyperbase.Permission"
+                                    "typeString": "enum IHyperclaim.Permission"
                                   }
                                 ],
                                 "id": 3383,
@@ -16416,7 +16416,7 @@
                                 "src": "15954:10:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                  "typeString": "type(enum IHyperbase.Permission)"
+                                  "typeString": "type(enum IHyperclaim.Permission)"
                                 }
                               },
                               "id": 3389,
@@ -16430,7 +16430,7 @@
                               "src": "15954:21:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Permission_$4662",
-                                "typeString": "enum IHyperbase.Permission"
+                                "typeString": "enum IHyperclaim.Permission"
                               }
                             },
                             "functionReturnParameters": 3357,
@@ -16592,7 +16592,7 @@
                                     "src": "16069:10:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                      "typeString": "type(enum IHyperbase.Permission)"
+                                      "typeString": "type(enum IHyperclaim.Permission)"
                                     }
                                   },
                                   "id": 3405,
@@ -16606,7 +16606,7 @@
                                   "src": "16069:16:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_enum$_Permission_$4662",
-                                    "typeString": "enum IHyperbase.Permission"
+                                    "typeString": "enum IHyperclaim.Permission"
                                   }
                                 }
                               ],
@@ -16614,7 +16614,7 @@
                                 "argumentTypes": [
                                   {
                                     "typeIdentifier": "t_enum$_Permission_$4662",
-                                    "typeString": "enum IHyperbase.Permission"
+                                    "typeString": "enum IHyperclaim.Permission"
                                   }
                                 ],
                                 "id": 3403,
@@ -16690,7 +16690,7 @@
                                       "src": "16194:10:11",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                        "typeString": "type(enum IHyperbase.Permission)"
+                                        "typeString": "type(enum IHyperclaim.Permission)"
                                       }
                                     },
                                     "id": 3420,
@@ -16704,7 +16704,7 @@
                                     "src": "16194:16:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_enum$_Permission_$4662",
-                                      "typeString": "enum IHyperbase.Permission"
+                                      "typeString": "enum IHyperclaim.Permission"
                                     }
                                   }
                                 ],
@@ -16712,7 +16712,7 @@
                                   "argumentTypes": [
                                     {
                                       "typeIdentifier": "t_enum$_Permission_$4662",
-                                      "typeString": "enum IHyperbase.Permission"
+                                      "typeString": "enum IHyperclaim.Permission"
                                     }
                                   ],
                                   "id": 3418,
@@ -16795,7 +16795,7 @@
                                       "src": "16124:10:11",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                                        "typeString": "type(enum IHyperbase.Permission)"
+                                        "typeString": "type(enum IHyperclaim.Permission)"
                                       }
                                     },
                                     "id": 3412,
@@ -16809,7 +16809,7 @@
                                     "src": "16124:16:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_enum$_Permission_$4662",
-                                      "typeString": "enum IHyperbase.Permission"
+                                      "typeString": "enum IHyperclaim.Permission"
                                     }
                                   }
                                 ],
@@ -16817,7 +16817,7 @@
                                   "argumentTypes": [
                                     {
                                       "typeIdentifier": "t_enum$_Permission_$4662",
-                                      "typeString": "enum IHyperbase.Permission"
+                                      "typeString": "enum IHyperclaim.Permission"
                                     }
                                   ],
                                   "id": 3410,
@@ -17044,7 +17044,7 @@
                       "src": "16240:10:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_enum$_Permission_$4662_$",
-                        "typeString": "type(enum IHyperbase.Permission)"
+                        "typeString": "type(enum IHyperclaim.Permission)"
                       }
                     },
                     "id": 3430,
@@ -17059,7 +17059,7 @@
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "functionReturnParameters": 3357,
@@ -17208,7 +17208,7 @@
                   "storageLocation": "default",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Permission_$4662",
-                    "typeString": "enum IHyperbase.Permission"
+                    "typeString": "enum IHyperclaim.Permission"
                   },
                   "typeName": {
                     "id": 3355,
@@ -17224,7 +17224,7 @@
                     "src": "15672:10:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "visibility": "internal"
@@ -17675,7 +17675,7 @@
                             "src": "17004:5:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                              "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                              "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                             }
                           },
                           "id": 3485,
@@ -17699,7 +17699,7 @@
                           "src": "17004:8:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Key_$2154_storage",
-                            "typeString": "struct Hyperbase.Key storage ref"
+                            "typeString": "struct Hyperclaim.Key storage ref"
                           }
                         },
                         "id": 3486,
@@ -17797,7 +17797,7 @@
                         "src": "16915:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 3473,
@@ -18037,7 +18037,7 @@
                         "rightExpression": {
                           "commonType": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           },
                           "id": 3521,
                           "isConstant": false,
@@ -18055,7 +18055,7 @@
                                 "src": "17389:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 3517,
@@ -18079,7 +18079,7 @@
                               "src": "17389:16:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 3518,
@@ -18093,7 +18093,7 @@
                             "src": "17389:23:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "nodeType": "BinaryOperation",
@@ -18108,7 +18108,7 @@
                               "src": "17416:6:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                "typeString": "type(enum IHyperbase.Status)"
+                                "typeString": "type(enum IHyperclaim.Status)"
                               }
                             },
                             "id": 3520,
@@ -18122,7 +18122,7 @@
                             "src": "17416:14:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "src": "17389:41:11",
@@ -18166,7 +18166,7 @@
                         "rightExpression": {
                           "commonType": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           },
                           "id": 3530,
                           "isConstant": false,
@@ -18184,7 +18184,7 @@
                                 "src": "17446:13:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                 }
                               },
                               "id": 3526,
@@ -18208,7 +18208,7 @@
                               "src": "17446:16:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                "typeString": "struct Hyperbase.Transaction storage ref"
+                                "typeString": "struct Hyperclaim.Transaction storage ref"
                               }
                             },
                             "id": 3527,
@@ -18222,7 +18222,7 @@
                             "src": "17446:23:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "nodeType": "BinaryOperation",
@@ -18237,7 +18237,7 @@
                               "src": "17473:6:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                "typeString": "type(enum IHyperbase.Status)"
+                                "typeString": "type(enum IHyperclaim.Status)"
                               }
                             },
                             "id": 3529,
@@ -18251,7 +18251,7 @@
                             "src": "17473:15:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "src": "17446:42:11",
@@ -18342,7 +18342,7 @@
                         "src": "17334:13:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                         }
                       },
                       "id": 3509,
@@ -18625,7 +18625,7 @@
                           "src": "17818:5:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                            "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                            "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                           }
                         },
                         "id": 3556,
@@ -18834,7 +18834,7 @@
                                 "src": "17991:5:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                  "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                  "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                 }
                               },
                               "id": 3581,
@@ -18858,7 +18858,7 @@
                               "src": "17991:8:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Key_$2154_storage",
-                                "typeString": "struct Hyperbase.Key storage ref"
+                                "typeString": "struct Hyperclaim.Key storage ref"
                               }
                             },
                             "id": 3582,
@@ -18951,7 +18951,7 @@
                                       "src": "18070:5:11",
                                       "typeDescriptions": {
                                         "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                                        "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                                        "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                                       }
                                     },
                                     "id": 3589,
@@ -18975,7 +18975,7 @@
                                     "src": "18070:8:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_struct$_Key_$2154_storage",
-                                      "typeString": "struct Hyperbase.Key storage ref"
+                                      "typeString": "struct Hyperclaim.Key storage ref"
                                     }
                                   },
                                   "id": 3590,
@@ -19073,7 +19073,7 @@
                         "src": "17900:5:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Key_$2154_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Key storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Key storage ref[] storage ref"
                         }
                       },
                       "id": 3569,
@@ -19664,7 +19664,7 @@
                           "src": "18666:13:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                           }
                         },
                         "id": 3651,
@@ -19834,7 +19834,7 @@
                             "rightExpression": {
                               "commonType": {
                                 "typeIdentifier": "t_enum$_Status_$4668",
-                                "typeString": "enum IHyperbase.Status"
+                                "typeString": "enum IHyperclaim.Status"
                               },
                               "id": 3676,
                               "isConstant": false,
@@ -19852,7 +19852,7 @@
                                     "src": "18813:13:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                      "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                      "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                     }
                                   },
                                   "id": 3672,
@@ -19876,7 +19876,7 @@
                                   "src": "18813:16:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                    "typeString": "struct Hyperbase.Transaction storage ref"
+                                    "typeString": "struct Hyperclaim.Transaction storage ref"
                                   }
                                 },
                                 "id": 3673,
@@ -19890,7 +19890,7 @@
                                 "src": "18813:23:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_enum$_Status_$4668",
-                                  "typeString": "enum IHyperbase.Status"
+                                  "typeString": "enum IHyperclaim.Status"
                                 }
                               },
                               "nodeType": "BinaryOperation",
@@ -19905,7 +19905,7 @@
                                   "src": "18840:6:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                    "typeString": "type(enum IHyperbase.Status)"
+                                    "typeString": "type(enum IHyperclaim.Status)"
                                   }
                                 },
                                 "id": 3675,
@@ -19919,7 +19919,7 @@
                                 "src": "18840:14:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_enum$_Status_$4668",
-                                  "typeString": "enum IHyperbase.Status"
+                                  "typeString": "enum IHyperclaim.Status"
                                 }
                               },
                               "src": "18813:41:11",
@@ -19963,7 +19963,7 @@
                             "rightExpression": {
                               "commonType": {
                                 "typeIdentifier": "t_enum$_Status_$4668",
-                                "typeString": "enum IHyperbase.Status"
+                                "typeString": "enum IHyperclaim.Status"
                               },
                               "id": 3685,
                               "isConstant": false,
@@ -19981,7 +19981,7 @@
                                     "src": "18870:13:11",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                                      "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                                      "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                                     }
                                   },
                                   "id": 3681,
@@ -20005,7 +20005,7 @@
                                   "src": "18870:16:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                                    "typeString": "struct Hyperbase.Transaction storage ref"
+                                    "typeString": "struct Hyperclaim.Transaction storage ref"
                                   }
                                 },
                                 "id": 3682,
@@ -20019,7 +20019,7 @@
                                 "src": "18870:23:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_enum$_Status_$4668",
-                                  "typeString": "enum IHyperbase.Status"
+                                  "typeString": "enum IHyperclaim.Status"
                                 }
                               },
                               "nodeType": "BinaryOperation",
@@ -20034,7 +20034,7 @@
                                   "src": "18897:6:11",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_type$_t_enum$_Status_$4668_$",
-                                    "typeString": "type(enum IHyperbase.Status)"
+                                    "typeString": "type(enum IHyperclaim.Status)"
                                   }
                                 },
                                 "id": 3684,
@@ -20048,7 +20048,7 @@
                                 "src": "18897:15:11",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_enum$_Status_$4668",
-                                  "typeString": "enum IHyperbase.Status"
+                                  "typeString": "enum IHyperclaim.Status"
                                 }
                               },
                               "src": "18870:42:11",
@@ -20216,7 +20216,7 @@
                         "src": "18756:13:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                         }
                       },
                       "id": 3664,
@@ -20904,7 +20904,7 @@
                         "src": "19604:21:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_enum$_Permission_$4662_$_t_uint256_$",
-                          "typeString": "mapping(enum IHyperbase.Permission => uint256)"
+                          "typeString": "mapping(enum IHyperclaim.Permission => uint256)"
                         }
                       },
                       "id": 3745,
@@ -20917,7 +20917,7 @@
                         "src": "19626:10:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Permission_$4662",
-                          "typeString": "enum IHyperbase.Permission"
+                          "typeString": "enum IHyperclaim.Permission"
                         }
                       },
                       "isConstant": false,
@@ -20969,7 +20969,7 @@
                             "src": "19688:10:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           }
                         ],
@@ -20977,7 +20977,7 @@
                           "argumentTypes": [
                             {
                               "typeIdentifier": "t_enum$_Permission_$4662",
-                              "typeString": "enum IHyperbase.Permission"
+                              "typeString": "enum IHyperclaim.Permission"
                             }
                           ],
                           "id": 3751,
@@ -21134,7 +21134,7 @@
                   "storageLocation": "default",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Permission_$4662",
-                    "typeString": "enum IHyperbase.Permission"
+                    "typeString": "enum IHyperclaim.Permission"
                   },
                   "typeName": {
                     "id": 3737,
@@ -21150,7 +21150,7 @@
                     "src": "19472:10:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Permission_$4662",
-                      "typeString": "enum IHyperbase.Permission"
+                      "typeString": "enum IHyperclaim.Permission"
                     }
                   },
                   "visibility": "internal"
@@ -21270,7 +21270,7 @@
                       "storageLocation": "default",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Status_$4668",
-                        "typeString": "enum IHyperbase.Status"
+                        "typeString": "enum IHyperclaim.Status"
                       },
                       "typeName": {
                         "id": 3773,
@@ -21286,7 +21286,7 @@
                         "src": "19910:6:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Status_$4668",
-                          "typeString": "enum IHyperbase.Status"
+                          "typeString": "enum IHyperclaim.Status"
                         }
                       },
                       "visibility": "internal"
@@ -21304,7 +21304,7 @@
                         "src": "19929:13:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                         }
                       },
                       "id": 3777,
@@ -21328,7 +21328,7 @@
                       "src": "19929:27:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                        "typeString": "struct Hyperbase.Transaction storage ref"
+                        "typeString": "struct Hyperclaim.Transaction storage ref"
                       }
                     },
                     "id": 3778,
@@ -21342,7 +21342,7 @@
                     "src": "19929:34:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Status_$4668",
-                      "typeString": "enum IHyperbase.Status"
+                      "typeString": "enum IHyperclaim.Status"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -21371,7 +21371,7 @@
                             "src": "20114:21:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_enum$_Status_$4668_$_t_array$_t_uint256_$dyn_storage_$",
-                              "typeString": "mapping(enum IHyperbase.Status => uint256[] storage ref)"
+                              "typeString": "mapping(enum IHyperclaim.Status => uint256[] storage ref)"
                             }
                           },
                           "id": 3795,
@@ -21384,7 +21384,7 @@
                             "src": "20136:9:11",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Status_$4668",
-                              "typeString": "enum IHyperbase.Status"
+                              "typeString": "enum IHyperclaim.Status"
                             }
                           },
                           "isConstant": false,
@@ -21467,7 +21467,7 @@
                               "src": "20191:21:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_enum$_Status_$4668_$_t_array$_t_uint256_$dyn_storage_$",
-                                "typeString": "mapping(enum IHyperbase.Status => uint256[] storage ref)"
+                                "typeString": "mapping(enum IHyperclaim.Status => uint256[] storage ref)"
                               }
                             },
                             "id": 3802,
@@ -21480,7 +21480,7 @@
                               "src": "20213:9:11",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_enum$_Status_$4668",
-                                "typeString": "enum IHyperbase.Status"
+                                "typeString": "enum IHyperclaim.Status"
                               }
                             },
                             "isConstant": false,
@@ -21563,7 +21563,7 @@
                           "src": "20050:21:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_enum$_Status_$4668_$_t_array$_t_uint256_$dyn_storage_$",
-                            "typeString": "mapping(enum IHyperbase.Status => uint256[] storage ref)"
+                            "typeString": "mapping(enum IHyperclaim.Status => uint256[] storage ref)"
                           }
                         },
                         "id": 3787,
@@ -21576,7 +21576,7 @@
                           "src": "20072:9:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           }
                         },
                         "isConstant": false,
@@ -21716,7 +21716,7 @@
                           "src": "20239:13:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Transaction_$2192_storage_$dyn_storage",
-                            "typeString": "struct Hyperbase.Transaction storage ref[] storage ref"
+                            "typeString": "struct Hyperclaim.Transaction storage ref[] storage ref"
                           }
                         },
                         "id": 3811,
@@ -21740,7 +21740,7 @@
                         "src": "20239:27:11",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Transaction_$2192_storage",
-                          "typeString": "struct Hyperbase.Transaction storage ref"
+                          "typeString": "struct Hyperclaim.Transaction storage ref"
                         }
                       },
                       "id": 3812,
@@ -21754,7 +21754,7 @@
                       "src": "20239:34:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Status_$4668",
-                        "typeString": "enum IHyperbase.Status"
+                        "typeString": "enum IHyperclaim.Status"
                       }
                     },
                     "nodeType": "Assignment",
@@ -21768,13 +21768,13 @@
                       "src": "20276:6:11",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Status_$4668",
-                        "typeString": "enum IHyperbase.Status"
+                        "typeString": "enum IHyperclaim.Status"
                       }
                     },
                     "src": "20239:43:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Status_$4668",
-                      "typeString": "enum IHyperbase.Status"
+                      "typeString": "enum IHyperclaim.Status"
                     }
                   },
                   "id": 3815,
@@ -21814,7 +21814,7 @@
                           "src": "20293:21:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_enum$_Status_$4668_$_t_array$_t_uint256_$dyn_storage_$",
-                            "typeString": "mapping(enum IHyperbase.Status => uint256[] storage ref)"
+                            "typeString": "mapping(enum IHyperclaim.Status => uint256[] storage ref)"
                           }
                         },
                         "id": 3818,
@@ -21827,7 +21827,7 @@
                           "src": "20315:6:11",
                           "typeDescriptions": {
                             "typeIdentifier": "t_enum$_Status_$4668",
-                            "typeString": "enum IHyperbase.Status"
+                            "typeString": "enum IHyperclaim.Status"
                           }
                         },
                         "isConstant": false,
@@ -21925,7 +21925,7 @@
                   "storageLocation": "default",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Status_$4668",
-                    "typeString": "enum IHyperbase.Status"
+                    "typeString": "enum IHyperclaim.Status"
                   },
                   "typeName": {
                     "id": 3762,
@@ -21941,7 +21941,7 @@
                     "src": "19793:6:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Status_$4668",
-                      "typeString": "enum IHyperbase.Status"
+                      "typeString": "enum IHyperclaim.Status"
                     }
                   },
                   "visibility": "internal"
@@ -21966,7 +21966,7 @@
           {
             "baseName": {
               "id": 2127,
-              "name": "IHyperbase",
+              "name": "IHyperclaim",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 4731,
               "src": "493:10:11"
@@ -21988,7 +21988,7 @@
             "src": "505:14:11"
           }
         ],
-        "canonicalName": "Hyperbase",
+        "canonicalName": "Hyperclaim",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
@@ -21998,7 +21998,7 @@
           747,
           4731
         ],
-        "name": "Hyperbase",
+        "name": "Hyperclaim",
         "nameLocation": "480:9:11",
         "scope": 3826,
         "usedErrors": []

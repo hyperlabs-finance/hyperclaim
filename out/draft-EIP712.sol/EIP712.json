@@ -12,7 +12,7 @@
   },
   "methodIdentifiers": {},
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/cryptography/draft-EIP712.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/cryptography/draft-EIP712.sol",
     "id": 1726,
     "exportedSymbols": {
       "ECDSA": [
@@ -43,7 +43,7 @@
         "id": 1574,
         "nodeType": "ImportDirective",
         "src": "129:21:9",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
         "file": "./ECDSA.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 1726,

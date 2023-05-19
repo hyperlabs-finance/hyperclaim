@@ -140,7 +140,7 @@
     "zeroVarError()": "b67689da"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdError.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdError.sol",
     "id": 6313,
     "exportedSymbols": {
       "stdError": [

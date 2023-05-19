@@ -4,11 +4,11 @@ pragma solidity ^0.8.6;
 
 // Inherits
 import 'openzeppelin-contracts/contracts/access/Ownable.sol';
-import '../Interface/IHyperbaseVerifiersRegistry.sol';
+import '../Interface/IHyperclaimVerifiersRegistry.sol';
 
 /**
 
-    HyperbaseVerifiersRegistry records which accounts are "verifiers" and are trusted
+    HyperclaimVerifiersRegistry records which accounts are "verifiers" and are trusted
     by users to provide high-risk claims that are used in credential-based interactions.
     These may include KYC agents or regulated broker dealers. The verifiers registry is
     seperated from the other contracts in the protocol so that it may be owned and controlled
@@ -18,7 +18,7 @@ import '../Interface/IHyperbaseVerifiersRegistry.sol';
 
  */
 
-contract HyperbaseVerifiersRegistry is IHyperbaseVerifiersRegistry, Ownable {
+contract HyperclaimVerifiersRegistry is IHyperclaimVerifiersRegistry, Ownable {
 	
   	////////////////
     // STATE

@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.6;
 
-interface IHyperbaseClaimRegistry {
+interface IHyperclaimRegistry {
     
   	////////////////
     // ERRORS

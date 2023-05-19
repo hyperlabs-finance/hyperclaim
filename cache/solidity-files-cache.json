@@ -9,7 +9,7 @@
     ]
   },
   "files": {
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/lib/ds-test/src/test.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/lib/ds-test/src/test.sol": {
       "lastModificationDate": 1680104123054,
       "contentHash": "abdafe4b187f548ef0145173f5b93247",
       "sourceName": "lib/forge-std/lib/ds-test/src/test.sol",
@@ -46,7 +46,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/Base.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/Base.sol": {
       "lastModificationDate": 1680104111804,
       "contentHash": "8f04bbbb2c16f79e14fdc321695a8ec2",
       "sourceName": "lib/forge-std/src/Base.sol",
@@ -92,7 +92,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdAssertions.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdAssertions.sol": {
       "lastModificationDate": 1680104111826,
       "contentHash": "6cc2858240bcd443debbbf075490e325",
       "sourceName": "lib/forge-std/src/StdAssertions.sol",
@@ -132,7 +132,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdChains.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdChains.sol": {
       "lastModificationDate": 1680104111838,
       "contentHash": "94ba68ea5c34509e1355d69df27597ce",
       "sourceName": "lib/forge-std/src/StdChains.sol",
@@ -171,7 +171,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdCheats.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdCheats.sol": {
       "lastModificationDate": 1680104111869,
       "contentHash": "1f7c1fe2f20a051b847336e1630e4bb5",
       "sourceName": "lib/forge-std/src/StdCheats.sol",
@@ -214,7 +214,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdError.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdError.sol": {
       "lastModificationDate": 1680104111906,
       "contentHash": "64c896e1276a291776e5ea5aecb3870a",
       "sourceName": "lib/forge-std/src/StdError.sol",
@@ -251,7 +251,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdInvariant.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdInvariant.sol": {
       "lastModificationDate": 1680104111915,
       "contentHash": "12c06010ec43ce935ed209d5aca30828",
       "sourceName": "lib/forge-std/src/StdInvariant.sol",
@@ -288,7 +288,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdJson.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdJson.sol": {
       "lastModificationDate": 1680104111925,
       "contentHash": "2e1d13674e152408867795362d833c24",
       "sourceName": "lib/forge-std/src/StdJson.sol",
@@ -327,7 +327,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdMath.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdMath.sol": {
       "lastModificationDate": 1680104111934,
       "contentHash": "9da8f453eba6bb98f3d75bc6822bfb29",
       "sourceName": "lib/forge-std/src/StdMath.sol",
@@ -364,7 +364,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdStorage.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdStorage.sol": {
       "lastModificationDate": 1680104111943,
       "contentHash": "3cb9868082df39a53927db09dbc21f23",
       "sourceName": "lib/forge-std/src/StdStorage.sol",
@@ -406,7 +406,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdStyle.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdStyle.sol": {
       "lastModificationDate": 1680104111951,
       "contentHash": "820e6f6b7704f0c980fae604b1e34b18",
       "sourceName": "lib/forge-std/src/StdStyle.sol",
@@ -445,7 +445,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/StdUtils.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/StdUtils.sol": {
       "lastModificationDate": 1680104111959,
       "contentHash": "45fc08daaa17b7908fa5de7d758d8c86",
       "sourceName": "lib/forge-std/src/StdUtils.sol",
@@ -485,7 +485,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/Test.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/Test.sol": {
       "lastModificationDate": 1680104111970,
       "contentHash": "bc9d74a0c612e1c2b66cca2973bcc803",
       "sourceName": "lib/forge-std/src/Test.sol",
@@ -539,7 +539,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/Vm.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/Vm.sol": {
       "lastModificationDate": 1680104112006,
       "contentHash": "0f5099a3e2094aa470517a0689889ebf",
       "sourceName": "lib/forge-std/src/Vm.sol",
@@ -579,7 +579,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/console.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/console.sol": {
       "lastModificationDate": 1680104112018,
       "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
       "sourceName": "lib/forge-std/src/console.sol",
@@ -616,7 +616,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/console2.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/console2.sol": {
       "lastModificationDate": 1680104112027,
       "contentHash": "2096b4e5f252c5df9909cccbe3d2da2e",
       "sourceName": "lib/forge-std/src/console2.sol",
@@ -653,7 +653,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/interfaces/IMulticall3.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/interfaces/IMulticall3.sol": {
       "lastModificationDate": 1680104112141,
       "contentHash": "7b131ca1ca32ef6378b7b9ad5488b901",
       "sourceName": "lib/forge-std/src/interfaces/IMulticall3.sol",
@@ -690,7 +690,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/access/Ownable.sol": {
       "lastModificationDate": 1679396761873,
       "contentHash": "923d1313ab5f974f2b07dd4342e07ba6",
       "sourceName": "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
@@ -729,7 +729,7 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/utils/Context.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/utils/Context.sol": {
       "lastModificationDate": 1658080340616,
       "contentHash": "6c9b3c7f814c551569fbf491e7164e68",
       "sourceName": "lib/openzeppelin-contracts/contracts/utils/Context.sol",
@@ -766,10 +766,10 @@
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/HyperbaseClaimRegistry.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/HyperclaimRegistry.sol": {
       "lastModificationDate": 1683722510284,
       "contentHash": "831e280c713de7b3db11734cbb7109d6",
-      "sourceName": "src/Hyperbase/HyperbaseClaimRegistry.sol",
+      "sourceName": "src/Hyperclaim/HyperclaimRegistry.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -798,20 +798,20 @@
       "imports": [
         "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
-        "src/Interface/IHyperbaseClaimRegistry.sol",
-        "src/Interface/IHyperbaseVerifiersRegistry.sol"
+        "src/Interface/IHyperclaimRegistry.sol",
+        "src/Interface/IHyperclaimVerifiersRegistry.sol"
       ],
       "versionRequirement": "^0.8.6",
       "artifacts": {
-        "HyperbaseClaimRegistry": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "HyperbaseClaimRegistry.sol/HyperbaseClaimRegistry.json"
+        "HyperclaimRegistry": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "HyperclaimRegistry.sol/HyperclaimRegistry.json"
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/HyperbaseIdentityRegistry.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/HyperclaimIdentityRegistry.sol": {
       "lastModificationDate": 1683722381335,
       "contentHash": "9e3a699de206f1e6ffc247480ed793ee",
-      "sourceName": "src/Hyperbase/HyperbaseIdentityRegistry.sol",
+      "sourceName": "src/Hyperclaim/HyperclaimIdentityRegistry.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -838,19 +838,19 @@
         }
       },
       "imports": [
-        "src/Interface/IHyperbaseIdentityRegistry.sol"
+        "src/Interface/IHyperclaimIdentityRegistry.sol"
       ],
       "versionRequirement": "^0.8.6",
       "artifacts": {
-        "HyperbaseIdentityRegistry": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "HyperbaseIdentityRegistry.sol/HyperbaseIdentityRegistry.json"
+        "HyperclaimIdentityRegistry": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "HyperclaimIdentityRegistry.sol/HyperclaimIdentityRegistry.json"
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/HyperbaseVerifiersRegistry.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/HyperclaimVerifiersRegistry.sol": {
       "lastModificationDate": 1683723061933,
       "contentHash": "5002bdeb89e9ebe05538b4a64797a10c",
-      "sourceName": "src/Hyperbase/HyperbaseVerifiersRegistry.sol",
+      "sourceName": "src/Hyperclaim/HyperclaimVerifiersRegistry.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -879,19 +879,19 @@
       "imports": [
         "lib/openzeppelin-contracts/contracts/access/Ownable.sol",
         "lib/openzeppelin-contracts/contracts/utils/Context.sol",
-        "src/Interface/IHyperbaseVerifiersRegistry.sol"
+        "src/Interface/IHyperclaimVerifiersRegistry.sol"
       ],
       "versionRequirement": "^0.8.6",
       "artifacts": {
-        "HyperbaseVerifiersRegistry": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "HyperbaseVerifiersRegistry.sol/HyperbaseVerifiersRegistry.json"
+        "HyperclaimVerifiersRegistry": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "HyperclaimVerifiersRegistry.sol/HyperclaimVerifiersRegistry.json"
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseClaimRegistry.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimRegistry.sol": {
       "lastModificationDate": 1683722850246,
       "contentHash": "5fbc6af38d86f83e7679487e43fc8315",
-      "sourceName": "src/Interface/IHyperbaseClaimRegistry.sol",
+      "sourceName": "src/Interface/IHyperclaimRegistry.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -920,15 +920,15 @@
       "imports": [],
       "versionRequirement": "^0.8.6",
       "artifacts": {
-        "IHyperbaseClaimRegistry": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IHyperbaseClaimRegistry.sol/IHyperbaseClaimRegistry.json"
+        "IHyperclaimRegistry": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IHyperclaimRegistry.sol/IHyperclaimRegistry.json"
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseIdentityRegistry.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimIdentityRegistry.sol": {
       "lastModificationDate": 1683721981970,
       "contentHash": "a0721a117cc5fb3b91330358c8b7225f",
-      "sourceName": "src/Interface/IHyperbaseIdentityRegistry.sol",
+      "sourceName": "src/Interface/IHyperclaimIdentityRegistry.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -957,15 +957,15 @@
       "imports": [],
       "versionRequirement": "^0.8.6",
       "artifacts": {
-        "IHyperbaseIdentityRegistry": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IHyperbaseIdentityRegistry.sol/IHyperbaseIdentityRegistry.json"
+        "IHyperclaimIdentityRegistry": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IHyperclaimIdentityRegistry.sol/IHyperclaimIdentityRegistry.json"
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseVerifiersRegistry.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimVerifiersRegistry.sol": {
       "lastModificationDate": 1683722854266,
       "contentHash": "b75aabf8f304b15b4aafcb8ecff913c4",
-      "sourceName": "src/Interface/IHyperbaseVerifiersRegistry.sol",
+      "sourceName": "src/Interface/IHyperclaimVerifiersRegistry.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -994,12 +994,12 @@
       "imports": [],
       "versionRequirement": "^0.8.6",
       "artifacts": {
-        "IHyperbaseVerifiersRegistry": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IHyperbaseVerifiersRegistry.sol/IHyperbaseVerifiersRegistry.json"
+        "IHyperclaimVerifiersRegistry": {
+          "0.8.14+commit.80d49f37.Linux.gcc": "IHyperclaimVerifiersRegistry.sol/IHyperclaimVerifiersRegistry.json"
         }
       }
     },
-    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/test/Contract.t.sol": {
+    "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/test/Contract.t.sol": {
       "lastModificationDate": 1680104100109,
       "contentHash": "848ba83feec29a2e4d286c118102ae20",
       "sourceName": "test/Contract.t.sol",

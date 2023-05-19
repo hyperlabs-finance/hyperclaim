@@ -558,7 +558,7 @@
     "testExample()": "3f5a4a2a"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/test/Contract.t.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/test/Contract.t.sol",
     "id": 34110,
     "exportedSymbols": {
       "ContractTest": [
@@ -634,7 +634,7 @@
         "id": 34094,
         "nodeType": "ImportDirective",
         "src": "65:28:36",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/forge-std/src/Test.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/forge-std/src/Test.sol",
         "file": "forge-std/Test.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 34110,

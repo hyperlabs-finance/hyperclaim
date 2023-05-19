@@ -238,10 +238,10 @@
     "setCountry(uint256,uint16)": "011493af"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseIdentityRegistry.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimIdentityRegistry.sol",
     "id": 1453,
     "exportedSymbols": {
-      "IHyperbaseIdentityRegistry": [
+      "IHyperclaimIdentityRegistry": [
         1452
       ]
     },
@@ -525,7 +525,7 @@
             "id": 1393,
             "nodeType": "EnumDefinition",
             "src": "863:2435:6",
-            "canonicalName": "IHyperbaseIdentityRegistry.Country",
+            "canonicalName": "IHyperclaimIdentityRegistry.Country",
             "members": [
               {
                 "id": 1197,
@@ -2598,14 +2598,14 @@
         ],
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "IHyperbaseIdentityRegistry",
+        "canonicalName": "IHyperclaimIdentityRegistry",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
           1452
         ],
-        "name": "IHyperbaseIdentityRegistry",
+        "name": "IHyperclaimIdentityRegistry",
         "nameLocation": "72:26:6",
         "scope": 1453,
         "usedErrors": [

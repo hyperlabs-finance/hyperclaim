@@ -78,7 +78,7 @@
           "type": "bool"
         },
         {
-          "internalType": "enum IHyperbaseIdentityRegistry.Country",
+          "internalType": "enum IHyperclaimIdentityRegistry.Country",
           "name": "country",
           "type": "uint8"
         }
@@ -283,13 +283,13 @@
     "setCountry(uint256,uint16)": "011493af"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/HyperbaseIdentityRegistry.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/HyperclaimIdentityRegistry.sol",
     "id": 786,
     "exportedSymbols": {
-      "HyperbaseIdentityRegistry": [
+      "HyperclaimIdentityRegistry": [
         785
       ],
-      "IHyperbaseIdentityRegistry": [
+      "IHyperclaimIdentityRegistry": [
         1452
       ]
     },
@@ -311,8 +311,8 @@
         "id": 545,
         "nodeType": "ImportDirective",
         "src": "74:55:3",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseIdentityRegistry.sol",
-        "file": ".././Interface/IHyperbaseIdentityRegistry.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimIdentityRegistry.sol",
+        "file": ".././Interface/IHyperclaimIdentityRegistry.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 786,
         "sourceUnit": 1453,
@@ -328,7 +328,7 @@
             "id": 553,
             "nodeType": "StructDefinition",
             "src": "308:63:3",
-            "canonicalName": "HyperbaseIdentityRegistry.Identity",
+            "canonicalName": "HyperclaimIdentityRegistry.Identity",
             "members": [
               {
                 "constant": false,
@@ -370,7 +370,7 @@
                 "storageLocation": "default",
                 "typeDescriptions": {
                   "typeIdentifier": "t_enum$_Country_$1393",
-                  "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                  "typeString": "enum IHyperclaimIdentityRegistry.Country"
                 },
                 "typeName": {
                   "id": 551,
@@ -386,7 +386,7 @@
                   "src": "349:7:3",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_Country_$1393",
-                    "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                    "typeString": "enum IHyperclaimIdentityRegistry.Country"
                   }
                 },
                 "visibility": "internal"
@@ -417,7 +417,7 @@
             "storageLocation": "default",
             "typeDescriptions": {
               "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-              "typeString": "struct HyperbaseIdentityRegistry.Identity[]"
+              "typeString": "struct HyperclaimIdentityRegistry.Identity[]"
             },
             "typeName": {
               "baseType": {
@@ -434,7 +434,7 @@
                 "src": "427:8:3",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_Identity_$553_storage_ptr",
-                  "typeString": "struct HyperbaseIdentityRegistry.Identity"
+                  "typeString": "struct HyperclaimIdentityRegistry.Identity"
                 }
               },
               "id": 557,
@@ -442,7 +442,7 @@
               "src": "427:10:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage_ptr",
-                "typeString": "struct HyperbaseIdentityRegistry.Identity[]"
+                "typeString": "struct HyperclaimIdentityRegistry.Identity[]"
               }
             },
             "visibility": "public"
@@ -1000,7 +1000,7 @@
                       "storageLocation": "memory",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Identity_$553_memory_ptr",
-                        "typeString": "struct HyperbaseIdentityRegistry.Identity"
+                        "typeString": "struct HyperclaimIdentityRegistry.Identity"
                       },
                       "typeName": {
                         "id": 614,
@@ -1016,7 +1016,7 @@
                         "src": "1948:8:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Identity_$553_storage_ptr",
-                          "typeString": "struct HyperbaseIdentityRegistry.Identity"
+                          "typeString": "struct HyperclaimIdentityRegistry.Identity"
                         }
                       },
                       "visibility": "internal"
@@ -1071,7 +1071,7 @@
                           "src": "2025:7:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_Country_$1393_$",
-                            "typeString": "type(enum IHyperbaseIdentityRegistry.Country)"
+                            "typeString": "type(enum IHyperclaimIdentityRegistry.Country)"
                           }
                         },
                         "id": 620,
@@ -1086,7 +1086,7 @@
                         "tryCall": false,
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Country_$1393",
-                          "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                          "typeString": "enum IHyperclaimIdentityRegistry.Country"
                         }
                       }
                     ],
@@ -1098,7 +1098,7 @@
                         },
                         {
                           "typeIdentifier": "t_enum$_Country_$1393",
-                          "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                          "typeString": "enum IHyperclaimIdentityRegistry.Country"
                         }
                       ],
                       "id": 616,
@@ -1109,7 +1109,7 @@
                       "src": "1976:8:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_struct$_Identity_$553_storage_ptr_$",
-                        "typeString": "type(struct HyperbaseIdentityRegistry.Identity storage pointer)"
+                        "typeString": "type(struct HyperclaimIdentityRegistry.Identity storage pointer)"
                       }
                     },
                     "id": 621,
@@ -1127,7 +1127,7 @@
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_struct$_Identity_$553_memory_ptr",
-                      "typeString": "struct HyperbaseIdentityRegistry.Identity memory"
+                      "typeString": "struct HyperclaimIdentityRegistry.Identity memory"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
@@ -1145,7 +1145,7 @@
                         "src": "2099:9:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Identity_$553_memory_ptr",
-                          "typeString": "struct HyperbaseIdentityRegistry.Identity memory"
+                          "typeString": "struct HyperclaimIdentityRegistry.Identity memory"
                         }
                       }
                     ],
@@ -1153,7 +1153,7 @@
                       "argumentTypes": [
                         {
                           "typeIdentifier": "t_struct$_Identity_$553_memory_ptr",
-                          "typeString": "struct HyperbaseIdentityRegistry.Identity memory"
+                          "typeString": "struct HyperclaimIdentityRegistry.Identity memory"
                         }
                       ],
                       "expression": {
@@ -1165,7 +1165,7 @@
                         "src": "2082:11:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                          "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                          "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                         }
                       },
                       "id": 625,
@@ -1178,7 +1178,7 @@
                       "src": "2082:16:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Identity_$553_storage_$dyn_storage_ptr_$_t_struct$_Identity_$553_storage_$returns$__$bound_to$_t_array$_t_struct$_Identity_$553_storage_$dyn_storage_ptr_$",
-                        "typeString": "function (struct HyperbaseIdentityRegistry.Identity storage ref[] storage pointer,struct HyperbaseIdentityRegistry.Identity storage ref)"
+                        "typeString": "function (struct HyperclaimIdentityRegistry.Identity storage ref[] storage pointer,struct HyperclaimIdentityRegistry.Identity storage ref)"
                       }
                     },
                     "id": 627,
@@ -1266,7 +1266,7 @@
                           "src": "2190:11:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                            "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                            "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                           }
                         },
                         "id": 633,
@@ -1337,7 +1337,7 @@
                         "src": "2257:11:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                          "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                          "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                         }
                       },
                       "id": 639,
@@ -1676,7 +1676,7 @@
                         "src": "2809:11:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                          "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                          "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                         }
                       },
                       "id": 668,
@@ -1700,7 +1700,7 @@
                       "src": "2809:21:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Identity_$553_storage",
-                        "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref"
+                        "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref"
                       }
                     },
                     "typeDescriptions": {
@@ -1912,7 +1912,7 @@
                           "src": "3375:11:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                            "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                            "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                           }
                         },
                         "id": 694,
@@ -1975,7 +1975,7 @@
                         "src": "3375:45:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Identity_$553_storage",
-                          "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref"
+                          "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref"
                         }
                       },
                       "id": 695,
@@ -1989,7 +1989,7 @@
                       "src": "3375:53:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Country_$1393",
-                        "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                        "typeString": "enum IHyperclaimIdentityRegistry.Country"
                       }
                     },
                     "nodeType": "Assignment",
@@ -2024,7 +2024,7 @@
                         "src": "3431:7:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_enum$_Country_$1393_$",
-                          "typeString": "type(enum IHyperbaseIdentityRegistry.Country)"
+                          "typeString": "type(enum IHyperclaimIdentityRegistry.Country)"
                         }
                       },
                       "id": 698,
@@ -2039,13 +2039,13 @@
                       "tryCall": false,
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_Country_$1393",
-                        "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                        "typeString": "enum IHyperclaimIdentityRegistry.Country"
                       }
                     },
                     "src": "3375:72:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_Country_$1393",
-                      "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                      "typeString": "enum IHyperclaimIdentityRegistry.Country"
                     }
                   },
                   "id": 700,
@@ -2481,7 +2481,7 @@
                             "src": "4181:11:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                              "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                             }
                           },
                           "id": 737,
@@ -2505,7 +2505,7 @@
                           "src": "4181:21:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Identity_$553_storage",
-                            "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref"
+                            "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref"
                           }
                         },
                         "id": 738,
@@ -2535,7 +2535,7 @@
                                 "src": "4218:11:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                                  "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                                  "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                                 }
                               },
                               "id": 743,
@@ -2559,7 +2559,7 @@
                               "src": "4218:21:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Identity_$553_storage",
-                                "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref"
+                                "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref"
                               }
                             },
                             "id": 744,
@@ -2573,7 +2573,7 @@
                             "src": "4218:29:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_enum$_Country_$1393",
-                              "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                              "typeString": "enum IHyperclaimIdentityRegistry.Country"
                             }
                           }
                         ],
@@ -2581,7 +2581,7 @@
                           "argumentTypes": [
                             {
                               "typeIdentifier": "t_enum$_Country_$1393",
-                              "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                              "typeString": "enum IHyperclaimIdentityRegistry.Country"
                             }
                           ],
                           "id": 740,
@@ -3000,7 +3000,7 @@
                             "src": "4841:11:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_array$_t_struct$_Identity_$553_storage_$dyn_storage",
-                              "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref[] storage ref"
+                              "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref[] storage ref"
                             }
                           },
                           "id": 779,
@@ -3024,7 +3024,7 @@
                           "src": "4841:21:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Identity_$553_storage",
-                            "typeString": "struct HyperbaseIdentityRegistry.Identity storage ref"
+                            "typeString": "struct HyperclaimIdentityRegistry.Identity storage ref"
                           }
                         },
                         "id": 780,
@@ -3038,7 +3038,7 @@
                         "src": "4841:29:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_Country_$1393",
-                          "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                          "typeString": "enum IHyperclaimIdentityRegistry.Country"
                         }
                       }
                     ],
@@ -3046,7 +3046,7 @@
                       "argumentTypes": [
                         {
                           "typeIdentifier": "t_enum$_Country_$1393",
-                          "typeString": "enum IHyperbaseIdentityRegistry.Country"
+                          "typeString": "enum IHyperclaimIdentityRegistry.Country"
                         }
                       ],
                       "id": 776,
@@ -3184,7 +3184,7 @@
           {
             "baseName": {
               "id": 546,
-              "name": "IHyperbaseIdentityRegistry",
+              "name": "IHyperclaimIdentityRegistry",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1452,
               "src": "169:26:3"
@@ -3194,7 +3194,7 @@
             "src": "169:26:3"
           }
         ],
-        "canonicalName": "HyperbaseIdentityRegistry",
+        "canonicalName": "HyperclaimIdentityRegistry",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
@@ -3202,7 +3202,7 @@
           785,
           1452
         ],
-        "name": "HyperbaseIdentityRegistry",
+        "name": "HyperclaimIdentityRegistry",
         "nameLocation": "140:25:3",
         "scope": 786,
         "usedErrors": [

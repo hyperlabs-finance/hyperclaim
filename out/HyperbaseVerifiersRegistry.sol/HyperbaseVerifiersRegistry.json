@@ -283,16 +283,16 @@
     "updateVerifierClaimTopics(address,uint256[])": "ecccf27b"
   },
   "ast": {
-    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Hyperbase/HyperbaseVerifiersRegistry.sol",
+    "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Hyperclaim/HyperclaimVerifiersRegistry.sol",
     "id": 1036,
     "exportedSymbols": {
       "Context": [
         126
       ],
-      "HyperbaseVerifiersRegistry": [
+      "HyperclaimVerifiersRegistry": [
         1035
       ],
-      "IHyperbaseVerifiersRegistry": [
+      "IHyperclaimVerifiersRegistry": [
         1524
       ],
       "Ownable": [
@@ -317,7 +317,7 @@
         "id": 788,
         "nodeType": "ImportDirective",
         "src": "79:61:4",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/lib/openzeppelin-contracts/contracts/access/Ownable.sol",
         "file": "openzeppelin-contracts/contracts/access/Ownable.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 1036,
@@ -329,8 +329,8 @@
         "id": 789,
         "nodeType": "ImportDirective",
         "src": "142:54:4",
-        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/hyperbase/src/Interface/IHyperbaseVerifiersRegistry.sol",
-        "file": "../Interface/IHyperbaseVerifiersRegistry.sol",
+        "absolutePath": "/mnt/c/Users/44783/Desktop/PROJECTS/hypersurface/Hyperclaim/src/Interface/IHyperclaimVerifiersRegistry.sol",
+        "file": "../Interface/IHyperclaimVerifiersRegistry.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 1036,
         "sourceUnit": 1525,
@@ -3050,7 +3050,7 @@
           {
             "baseName": {
               "id": 790,
-              "name": "IHyperbaseVerifiersRegistry",
+              "name": "IHyperclaimVerifiersRegistry",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 1524,
               "src": "239:27:4"
@@ -3072,7 +3072,7 @@
             "src": "268:7:4"
           }
         ],
-        "canonicalName": "HyperbaseVerifiersRegistry",
+        "canonicalName": "HyperclaimVerifiersRegistry",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
@@ -3082,7 +3082,7 @@
           126,
           1524
         ],
-        "name": "HyperbaseVerifiersRegistry",
+        "name": "HyperclaimVerifiersRegistry",
         "nameLocation": "209:26:4",
         "scope": 1036,
         "usedErrors": [
