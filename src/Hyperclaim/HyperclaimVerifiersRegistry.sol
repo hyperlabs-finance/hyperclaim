@@ -4,17 +4,17 @@ pragma solidity ^0.8.6;
 
 // Inherits
 import 'openzeppelin-contracts/contracts/access/Ownable.sol';
-import '../Interface/IHyperclaimVerifiersRegistry.sol';
+import '../interface/IHyperclaimVerifiersRegistry.sol';
 
 /**
 
     HyperclaimVerifiersRegistry records which accounts are "verifiers" and are trusted
-    by users to provide high-risk claims that are used in credential-based interactions.
+    by users to provide high-risk claims used in credential-based interactions.
     These may include KYC agents or regulated broker dealers. The verifiers registry is
-    seperated from the other contracts in the protocol so that it may be owned and controlled
-    by a token curated registry. This design choice has been made (but yet to be implemented)
-    in order to further decentralised control in the Hypersurface protocol, in order to ensure
-    that no one group, not even Hypersurface, gets final say in terms of key decisions.  
+    seperate from the other contracts in the protocol so that it may be owned and controlled
+    by a token curated registry. This design choice has been made (yet to be implemented)
+    in order to further decentralise control in the Hypersurface protocol, thereby ensuring
+    that no single group, not even Hypersurface, gets final say in terms of key decisions.  
 
  */
 
@@ -152,7 +152,7 @@ contract HyperclaimVerifiersRegistry is IHyperclaimVerifiersRegistry, Ownable {
      * @dev Checks if address is a trusted verifier.
      * @param verifier The address of the trusted verifier to check exists.
      */
-    function checkIsVerifier(
+    function checkVerifier(
         address verifier
     )
         public
@@ -171,7 +171,7 @@ contract HyperclaimVerifiersRegistry is IHyperclaimVerifiersRegistry, Ownable {
      * @param verifier The address of the trusted verifier to check the topic on.
      * @param topic The topic to check if the verifier is trusted to make claims about.
      */
-    function checkIsVerifierTrustedTopic(
+    function checkVerifierTrustedTopic(
         address verifier,
         uint256 topic
     )

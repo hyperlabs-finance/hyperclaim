@@ -54,7 +54,7 @@ interface IHyperclaimVerifiersRegistry {
     // CHECKS
     //////////////////////////////////////////////
 
-    function checkIsVerifier(address verifier) external view returns (bool);
-    function checkIsVerifierTrustedTopic(address verifier, uint256 topic) external view returns (bool);
+    function checkVerifier(address verifier) external view returns (bool);
+    function checkVerifierTrustedTopic(address verifier, uint256 topic) external view returns (bool);
 	
 }

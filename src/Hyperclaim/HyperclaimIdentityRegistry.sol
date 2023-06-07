@@ -9,7 +9,7 @@ import '.././Interface/IHyperclaimIdentityRegistry.sol';
 
     HyperclaimIdentityRegistry records key fields about user identities on-chain. This 
     will soon be updated so as to obfuscate the underlying accounts allowing claims to 
-    be recorded on-chain without readily revealing information about the user the 
+    be recorded on-chain without readily revealing information about the user they 
     pertain to.
 
  */

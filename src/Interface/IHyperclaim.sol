@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.6;
 
-interface IHyperclaimRegistry {
+interface IHyperclaim {
     
   	////////////////
     // ERRORS
@@ -72,7 +72,7 @@ interface IHyperclaimRegistry {
     // CHECKS
     //////////////////////////////////////////////
 
-    function checkIsClaimValid(uint256 claim) external view returns (bool claimValid);
-    function checkIsClaimRevoked(uint256 claim) external view returns (bool);
+    function checkClaimValid(uint256 claim) external view returns (bool claimValid);
+    function checkClaimRevoked(uint256 claim) external view returns (bool);
 
 }

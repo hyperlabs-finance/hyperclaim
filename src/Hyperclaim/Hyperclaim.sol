@@ -4,17 +4,17 @@ pragma solidity ^0.8.6;
 
 // Inherits
 import 'openzeppelin-contracts/contracts/access/Ownable.sol';
-import '../Interface/IHyperclaimRegistry.sol';
+import '../Interface/IHyperclaim.sol';
 
 // Interfaces
 import '../Interface/IHyperclaimVerifiersRegistry.sol';
 
 /**
 
-    HyperclaimRegistry is the central registry where users of the hypersurface protocol can add 
+    Hyperclaim is the central registry where users of the hypersurface protocol can add 
     claims about themselves and others. These claims are then checked in credital-based interactions.
-    Examples of such claims may be that an user is an accredited investor or that the are a citizen
-    of a particular jurisdiction.
+    Examples of such claims are that a user is an accredited investor or that a citizen of a 
+    particular jurisdiction.
 
  */
 
@@ -279,15 +279,15 @@ contract HyperclaimRegistry is IHyperclaimRegistry, Ownable {
      * @dev Checks if a claim is valid.
      * @param claim The ID of the claim to return fields for.
      */
-    function checkIsClaimValid(
+    function checkClaimValid(
         uint256 claim
     )
         public
         view
         returns (bool claimValid)
     {
-        if (_claimValidity[claim] && _verifiers.checkIsVerifier(_claims[claim].issuer))
-            if (_verifiers.checkIsVerifierTrustedTopic(_claims[claim].issuer, _claims[claim].topic))
+        if (_claimValidity[claim] && _verifiers.checkVerifier(_claims[claim].issuer))
+            if (_verifiers.checkVerifierTrustedTopic(_claims[claim].issuer, _claims[claim].topic))
                 return true;
 
         return false;
@@ -297,7 +297,7 @@ contract HyperclaimRegistry is IHyperclaimRegistry, Ownable {
      * @dev Returns revocation status of a claim.
      * @param claim The ID of the claim to return fields for.
      */
-    function checkIsClaimRevoked(
+    function checkClaimRevoked(
         uint256 claim
     )
         public

@@ -250,7 +250,6 @@ interface IHyperclaimIdentityRegistry {
     // SETTERS
     //////////////////////////////////////////////
     
-    // Update the country of an idenity 
     function setCountry(uint256 identity,  uint16 country) external;
     
     //////////////////////////////////////////////
