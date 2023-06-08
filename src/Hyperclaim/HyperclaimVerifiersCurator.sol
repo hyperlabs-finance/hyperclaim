@@ -3,89 +3,206 @@
 pragma solidity ^0.8.6;
 
 import 'openzeppelin-contracts/contracts/access/Ownable.sol';
+import 'openzeppelin-contracts/contracts/token/ERC20/IERC20.sol';
 import '../Interface/IHyperclaimVerifiersCurator.sol';
 
 // #TODO
 
-// Curator manages the addition of verifiers to the verifiers registry via submission and voting
+// Curator manages the addition of verifiers to the verifiers registry via application and voting
 contract TokenCuratedRegistry {
 
-    struct Submission {
-        address submitter; // Address of the submission creator
-        string data; // Data associated with the submission
-        uint256 deposit; // Number of tokens staked as deposit
-        uint256 voteCount; // Number of votes received
-        bool isAccepted; // Whether the submission is accepted or rejected
+  	////////////////
+    // EVENTS
+    ////////////////
+
+    event ApplicationCreated(uint256 indexed applicationId, address indexed submitter, string data);
+    event ApplicationVoted(uint256 indexed applicationId, address indexed voter, uint256 voteCount);
+    event ApplicationAccepted(uint256 indexed applicationId);
+    event ApplicationRejected(uint256 indexed applicationId);
+
+  	////////////////
+    // ERRORS
+    ////////////////
+
+	error NotVerifier();
+	error InelligibleApplicant();
+	error InsufficientTokens();
+	error AlreadyVoted();
+	error ApplicationProcessed();
+	error InvalidApplication();
+	error VotingOpen();
+
+  	////////////////
+    // STATE
+    ////////////////
+
+	enum Status {
+		REVIEWING;
+		ACCEPTED;
+		REJECTED;
+	} 
+
+	// Config	
+    IERC20 public _votingToken; // IERC20 _votingToken used for voting
+    uint256 public _applicationDeposit; // Minimum number of tokens required as a deposit for application
+    uint256 public _votingPeriod; // Duration of the voting period in seconds
+
+    struct Application {
+        address submitter; 	// Address of the application creator
+        string data; 		// Data associated with the application
+        uint256 deposit; 	// Number of tokens staked as deposit
+        uint256 voteCount; 	// Number of votes received
+        Status status; 		// Whether the application is accepted or rejected
     }
 
-    IERC20 public token; // IERC20 token used for voting
-    uint256 public submissionDeposit; // Minimum number of tokens required as a deposit for submission
-    uint256 public votingPeriod; // Duration of the voting period in seconds
+    Application[] public applications; // Array of all applications
 
-    Submission[] public submissions; // Array of all submissions
-    mapping(address => uint256) public balances; // Mapping of token balances for each participant
-    mapping(address => mapping(uint256 => bool)) public hasVoted; // Mapping to track whether a participant has voted on a submission
+    mapping(address => uint256) public balances; // Mapping of _votingToken balances for each participant
+    mapping(address => mapping(uint256 => bool)) public hasVoted; // Mapping to track whether a participant has voted on a application
 
-    event SubmissionCreated(uint256 indexed submissionId, address indexed submitter, string data);
-    event SubmissionVoted(uint256 indexed submissionId, address indexed voter, uint256 voteCount);
-    event SubmissionAccepted(uint256 indexed submissionId);
-    event SubmissionRejected(uint256 indexed submissionId);
+  	////////////////
+    // MODIFIERS
+    ////////////////
 
-    constructor(address _tokenAddress, uint256 _submissionDeposit, uint256 _votingPeriod) {
-        token = IERC20(_tokenAddress);
-        submissionDeposit = _submissionDeposit;
-        votingPeriod = _votingPeriod;
+    // Ensure the subject is a verifier
+    modifier onlyVerifier(
+		address verifier
+	) {
+        if (_verifiersByAddress[verifier].status != Status.ACCEPTED)
+            revert NotVerifier();
+        _;
     }
 
-    function submit(string memory _data) external {
-        require(token.balanceOf(msg.sender) >= submissionDeposit, "Insufficient tokens to submit");
-        require(token.transferFrom(msg.sender, address(this), submissionDeposit), "Token transfer failed");
+	// Ensure that the verifier elligible to (re-/) apply
+	modifier elligibleApplicant(
+		address verifier
+	) {
+		if (_verifiersByAddress[verifier].account == address(0) || _verifiersByAddress[verifier].status != Status.REJECTED)
+			revert InelligibleApplicant();
+		_;
+	}
 
-        Submission memory newSubmission = Submission({
+	// Ensure sufficient tokens to submit a proposal
+	modifier sufficientTokens() {
+		if (_votingToken.balanceOf(msg.sender) < _applicationDeposit)
+			revert InsufficientTokens();
+		_;
+	}
+
+	// Ensure user has not already voted on this application
+	modifier notVoted() {
+		if (hasVoted[msg.sender][applicationId])
+			revert AlreadyVoted();
+		_;
+	}
+
+	// Ensure application has not already been processed
+	modifier applicationPending() {
+		if (applications[applicationId].status != Status.REVIEWING)
+			revert ApplicationProcessed();
+		_;
+	}
+
+	// Ensure valid application ID
+	modifier applicationValid() {
+		if (/* #TODO ? .exists */)
+			revert InvalidApplication();
+		_;
+	}
+
+	// Ensure that the voting period has ended
+	modifier votingExpired() {
+		if (/* #TODO ? .expires , block.timestamp < _votingPeriod*/)
+			revert VotingOpen();
+		_;
+	}
+
+  	////////////////
+    // CONSTRUCTOR
+    ////////////////
+
+    constructor(
+		address tokenAddress,
+		uint256 applicationDeposit,
+		uint256 votingPeriod
+	) {
+        _votingToken = IERC20(tokenAddress);
+        _applicationDeposit = applicationDeposit;
+        _votingPeriod = votingPeriod;
+    }
+
+    function submit(
+		string memory data
+	)
+		external
+		sufficientTokens()
+	{
+		// Handle collateral
+        require(_votingToken.transferFrom(msg.sender, address(this), _applicationDeposit), "Token transfer failed");
+
+		// Add application
+        Application memory newApplication = Application({
             submitter: msg.sender,
-            data: _data,
-            deposit: submissionDeposit,
+            data: data,
+            deposit: _applicationDeposit,
             voteCount: 0,
-            isAccepted: false
+            status: Status.REVIEWING
         });
-        uint256 submissionId = submissions.length;
-        submissions.push(newSubmission);
 
-        emit SubmissionCreated(submissionId, msg.sender, _data);
+		// Add application to array
+        uint256 applicationId = applications.length;
+        applications.push(newApplication);
+
+		// Emit event
+        emit ApplicationCreated(applicationId, msg.sender, data);
     }
 
-    function vote(uint256 _submissionId, uint256 _voteCount) external {
-        require(_submissionId < submissions.length, "Invalid submission ID");
-        require(!hasVoted[msg.sender][_submissionId], "Already voted on this submission");
+    function vote(
+		uint256 applicationId,
+		uint256 voteCount
+	)
+		external
+		applicationPending(applicationId)
+		applicationValid(applicationId)
+		notVoted(applicationId)
+	{
+		// Get application
+        Application storage application = applications[applicationId];
 
-        Submission storage submission = submissions[_submissionId];
-        require(submission.isAccepted == false, "Submission has already been accepted");
+		// Add the vote
+        hasVoted[msg.sender][applicationId] = true;
+        application.voteCount += voteCount;
+        balances[msg.sender] += voteCount;
 
-        hasVoted[msg.sender][_submissionId] = true;
-        submission.voteCount += _voteCount;
-        balances[msg.sender] += _voteCount;
-
-        emit SubmissionVoted(_submissionId, msg.sender, _voteCount);
+		// Emit event
+        emit ApplicationVoted(applicationId, msg.sender, voteCount);
     }
 
-    function processSubmission(uint256 _submissionId) external {
-        require(_submissionId < submissions.length, "Invalid submission ID");
+    function processApplication(
+		uint256 applicationId
+	)
+		external
+		applicationValid(applicationId)
+		applicationPending(applicationId)
+		votingExpired()
+	{
+		// Get application 
+        Application storage application = applications[applicationId];
 
-        Submission storage submission = submissions[_submissionId];
-        require(submission.isAccepted == false, "Submission has already been processed");
+		// Tally vote
+        if (application.voteCount > (applications.length / 2)) {
+            application.status = Status.ACCEPTED;
 
-        // Check if the voting period has ended
-        require(block.timestamp >= votingPeriod, "Voting period has not ended yet");
-
-        if (submission.voteCount > (submissions.length / 2)) {
-            submission.isAccepted = true;
-            emit SubmissionAccepted(_submissionId);
+			// Emit event
+            emit ApplicationAccepted(applicationId);
         } else {
-            // If the submission is rejected, return the staked deposit to the submitter
-            require(token.transfer(submission.submitter, submission.deposit), "Token transfer failed");
-            emit
+            // If the application is rejected, return the staked deposit to the submitter
+            require(_votingToken.transfer(application.submitter, application.deposit), "Token transfer failed");
 
- SubmissionRejected(_submissionId);
+            application.status = Status.REJECTED;
+
+			// Emit event
+            emit ApplicationRejected(applicationId);
         }
     }
 }
