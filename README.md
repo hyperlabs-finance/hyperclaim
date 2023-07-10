@@ -6,7 +6,7 @@ Verifiable digital identities create a powerful resource that enables users to e
 
 ## Hyperclaim.sol
 
-Hyperclaim is the central registry where users of the hypersurface protocol can add claims about themselves and others. These claims are then checked in credital-based interactions. Examples of such claims are that a user is an accredited investor or that a citizen of a particular jurisdiction.
+Hyperclaim is the central registry where users of the hypersurface protocol can add claims about themselves and others. These claims are then checked in credential-based interactions. Examples of such claims are that a user is an accredited investor or that a citizen of a particular jurisdiction.
 
 ## HyperclaimIdentityRegistry.sol
 
