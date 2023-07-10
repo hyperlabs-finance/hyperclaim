@@ -9,6 +9,7 @@ import '../Interface/IHyperclaimVerifiersCurator.sol';
 // #TODO
 
 // Curator manages the addition of verifiers to the verifiers registry via application and voting
+
 contract TokenCuratedRegistry {
 
   	////////////////
@@ -205,6 +206,11 @@ contract TokenCuratedRegistry {
             emit ApplicationRejected(applicationId);
         }
     }
+
+	// #TODO CHALLENGE
+
+
+	// 
 }
 
 contract HyperclaimVerifiersCurator is IHyperclaimVerifiersCurator, Ownable {
